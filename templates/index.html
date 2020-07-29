@@ -180,86 +180,19 @@
         <section class="section timeline-section" id="timeline-section">
           <h1 class="section-title">Experience Timeline</h1>
           <div class="timeline">
-            <div class="timeline-item left">
+            {% for item in timeline %}
+              
+
+            <div class="timeline-item {% if loop.index0%2 == 0 %}left{% else %}right{% endif %}">
               <div class="timeline-item-body">
                 <div class="timeline-item-header">
-                  <p>Present</p>
-                  <h4>Freelancing</h4>
+                  <p>{{ item.time }}</p>
+                  <h4>{{ item.title }}</h4>
                 </div>
-                Working on projects to learn and a few for clients
+                {{ item.description }}
               </div>
             </div>
-            <div class="timeline-item right">
-              <div class="timeline-item-body">
-                <div class="timeline-item-header">
-                  <p>July 2020</p>
-                  <h4>React Timeline</h4>
-                </div>
-                Created my first NPM package! Create cool and good looking
-                timelines with ease,
-                <a
-                  class="timeline-link"
-                  href="https://www.npmjs.com/package/react-timelinev1"
-                  >View it here</a
-                >
-              </div>
-            </div>
-            <div class="timeline-item left">
-              <div class="timeline-item-body">
-                <div class="timeline-item-header">
-                  <p>July 2020</p>
-                  <h4>FreeCodeCamp</h4>
-                </div>
-                Started to learn more about data structures and algorithms on
-                <a class="timeline-link" href="https://freecodecamp.com"
-                  >FreeCodeCamp</a
-                >, Fun but hard!
-              </div>
-            </div>
-            <div class="timeline-item right">
-              <div class="timeline-item-body">
-                <div class="timeline-item-header">
-                  <p>June 2020</p>
-                  <h4>Sololearn</h4>
-                </div>
-                Started learning the basics of JavaScript again. Was very
-                helpful,
-                <a
-                  class="timeline-link"
-                  href="https://www.sololearn.com/Certificate/1024-18951663/pdf/"
-                  >View Certificate</a
-                >
-              </div>
-            </div>
-            <div class="timeline-item left">
-              <div class="timeline-item-body">
-                <div class="timeline-item-header">
-                  <p>March 2020</p>
-                  <h4>Quarantine</h4>
-                </div>
-                Quarantine was pretty cool, had a lot of time to learn more
-                about ReactJs and could work on a lot of projects!
-              </div>
-            </div>
-            <div class="timeline-item right">
-              <div class="timeline-item-body">
-                <div class="timeline-item-header">
-                  <p>End 2019 - Present</p>
-                  <h4>SnailyCAD</h4>
-                </div>
-                At the end of 2019 I started my first big project! SnailyCAD.
-              </div>
-            </div>
-            <div class="timeline-item left">
-              <div class="timeline-item-body">
-                <div class="timeline-item-header">
-                  <p>2018 - 2019</p>
-                  <h4>Beginning!</h4>
-                </div>
-                2018, '19 were the years I fully got into programming and
-                computers
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </section>
 

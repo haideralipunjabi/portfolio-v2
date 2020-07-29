@@ -109,7 +109,7 @@
 
 .timeline-item-header p {
   font-size: 1.2rem;
-  color: #848892;
+  color: var(--primary);
   font-weight: bold;
 }
 

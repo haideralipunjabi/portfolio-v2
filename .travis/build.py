@@ -15,7 +15,7 @@ templateEnv = jinja2.Environment(loader=templateLoader)
 templates = [
     {
         "input": "index.html",
-        "data": ["backpack.json","settings.json","projects.json"],
+        "data": ["backpack.json","settings.json","projects.json","timeline.json"],
         "output": "index.html"
     },
     {
