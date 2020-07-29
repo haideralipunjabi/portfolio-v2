@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: data/settings.json
-  label: Settings
+  label: Site Settings
 upload_dir: assets/img
 public_path: "/assets/img"
 front_matter_path: ''
