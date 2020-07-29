@@ -1,6 +1,6 @@
 {
   "name": "Haider Ali Punjabi",
-  "background_color": "#353B43",
+  "background_color": "#AFBAC4",
   "subtitle": "Developer",
   "social_media": [
     {
@@ -19,6 +19,6 @@
       "icon": "/assets/img/twitter.svg"
     }
   ],
-  "background_color_dark": "",
-  "primary_color": ""
+  "background_color_dark": "#353B43",
+  "primary_color": "#57CC8A"
 }
