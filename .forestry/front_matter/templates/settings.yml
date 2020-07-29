@@ -19,16 +19,16 @@ fields:
 - name: social_media
   type: field_group_list
   fields:
-  - name: url
-    type: text
-    config:
-      required: false
-    label: URL
   - name: name
     type: text
     config:
       required: false
     label: Name
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
   - name: icon
     type: file
     config:
