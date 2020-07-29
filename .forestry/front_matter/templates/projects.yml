@@ -42,3 +42,5 @@ fields:
     max: 
     labelField: 
   label: Projects
+pages:
+- data/projects.json
