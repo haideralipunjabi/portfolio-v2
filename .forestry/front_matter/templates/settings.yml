@@ -1,4 +1,10 @@
 ---
 label: Settings
 hide_body: true
-fields: []
+fields:
+- name: background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
