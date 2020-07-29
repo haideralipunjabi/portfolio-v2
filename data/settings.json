@@ -1,8 +1,19 @@
 {
   "name": "Haider Ali Punjabi",
   "background_color": "",
-  "subtitle": "",
+  "subtitle": "Developer",
   "social_media": [
-
-  ]
+    {
+      "url": "https://instagram.com/haideralipunjabi",
+      "name": "Instagram",
+      "icon": ""
+    },
+    {
+      "url": "https://twitter.com/haideralipunjabi",
+      "name": "Twitter",
+      "icon": "/assets/img/twitter.svg"
+    }
+  ],
+  "background_color_dark": "",
+  "primary_color": ""
 }
