@@ -29,3 +29,5 @@ fields:
     max: 
     labelField: 
   label: Timeline
+pages:
+- data/timeline.json

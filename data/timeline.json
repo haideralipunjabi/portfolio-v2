@@ -1,0 +1,24 @@
+{
+  "timeline": [
+    {
+      "title": "Django Quiz Software",
+      "time": "May - June 2017",
+      "description": "A Quiz Software made with Django"
+    },
+    {
+      "title": "Evolve CP Calculator",
+      "time": "July 2016",
+      "description": "An Android Tool for the game Pokemon GO"
+    },
+    {
+      "description": "Presented KPC & other projects at The Youth Speaks organised by Four Seasons",
+      "title": "Event",
+      "time": "April 2017"
+    },
+    {
+      "title": "KPC",
+      "time": "December 2016 - June 2017",
+      "description": "An Android client for Kashmir Photography Club"
+    }
+  ]
+}
