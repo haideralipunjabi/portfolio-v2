@@ -7,12 +7,6 @@ fields:
   config:
     required: false
   label: Name
-- name: background_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
 - name: subtitle
   type: textarea
   default: ''
@@ -45,5 +39,21 @@ fields:
     max: 
     labelField: 
   label: Social Media
+- name: background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+- name: background_color_dark
+  type: text
+  config:
+    required: false
+  label: Background Color - Dark
+- name: primary_color
+  type: text
+  config:
+    required: false
+  label: Primary Color
 pages:
 - data/settings.json
