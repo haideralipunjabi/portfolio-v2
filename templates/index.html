@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haider Ali Punjabi - Portfolio</title>
+    <title>{{ name }} - Portfolio</title>
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -12,22 +12,22 @@
       name="description"
       content="Hi, I am Haider Ali Punjabi"
     />
-    <link rel="canonical" href="https://v2.haideralipunjabi.com" />
+    <link rel="canonical" href="{{ url }}" />
     <!-- <meta
       name="keywords"
       content="caspertheghost, dev-caspertheghost, casper, @casper124578, Dev-CasperTheGhost, CasperTheGhost Dev, casper, iversen, casper iversen, @dev-caspertheghost, frontend dev, developer, frontend developer portfolio, portfolio"
     /> -->
-    <meta name="theme-color" content="#57CC8A" />
-    <meta property="og:color" content="#57CC8A" />
+    <meta name="theme-color" content="{{ primary_color }}" />
+    <meta property="og:color" content="{{ primary_color }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://v2.haideralipunjabi.com" />
-    <meta property="og:title" content="Haider Ali Punjabi" />
+    <meta property="og:url" content="{{ url }}" />
+    <meta property="og:title" content="{{ name }}" />
     <meta property="og:image" content="https://caspertheghost.me/assets/img/Icon.png" />
     <meta
       property="og:description"
       content="Hi I'm Casper Iversen! A web developer"
     />
-    <meta property="og:site_name" content="Haider Ali Punjabi" />
+    <meta property="og:site_name" content="{{ name }}" />
     <link
       rel="shortcut icon"
       href="./assets/img/Icon.png"
@@ -100,9 +100,9 @@
 
         <main class="main">
           <div class="fade-down">
-            <p>Haider Ali Punjabi</p>
+            <p>{{ name }}</p>
             <h1>
-              Developer
+              {{ subtitle }}
             </h1>
             <div class="btn-container">
               <a class="btn" href="#projects-section">Projects</a>
@@ -115,114 +115,52 @@
           </a>
 
           <div class="socials">
-            
+            {% for social in social_media %}
                 <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/haideralipunjabi"
+                href="{{ social.url }}"
               >
-                <i class="fab fa-github"></i>
+                <i class="{{ social.icon }}"></i>
               </a>
-            
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://instagram.com/haideralipunjabi"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-            
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/haideralipunjabi"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-            
+            {% endfor %}
           </div>
         </main>
 
         <section class="skills section" id="skills-section">
           <h1 class="section-title">My Backpack</h1>
           <div class="skills-container">
-            
+            {% for skill in backpack %}
             <div class="skill">
-              <i class="fab fa-js"></i>
-              <p>Javascript</p>
+              <i class="{{ skill.icon }}"></i>
+              <p>{{ skill.name }}</p>
             </div>
-            
-            <div class="skill">
-              <i class="fab fa-css3"></i>
-              <p>CSS</p>
-            </div>
-            
-            <div class="skill">
-              <i class="fab fa-html5"></i>
-              <p>HTML</p>
-            </div>
-            
+            {% endfor %}
           </div>
         </section>
 
         <section class="section projects" id="projects-section">
           <h1 class="section-title">Projects</h1>
           <div class="projects-container">
-            
+            {% for project in projects %}
             <div class="project">
-              <h2>Custom Icons for Atom</h2>
+              <h2>{{ project.name }}</h2>
               <p>
-                A project for custom Atom Icons.
+                {{ project.description }}
               </p>
               <div class="btn-container">
-                
+                {% for button in project.buttons %}
                 <a
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-btn"
-                href="https://github.com/HackeSta/atom-icons"
-                >Github</a
+                href="{{ button.link }}"
+                >{{ button.name }}</a
               >
-                
+                {% endfor %}
               </div>
             </div>
-            
-            <div class="project">
-              <h2>Tweet2Pic</h2>
-              <p>
-                Tweet2Pic is a small tool, which can be used to share your Twitter Tweets in the form of an image.
-              </p>
-              <div class="btn-container">
-                
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-btn"
-                href="https://play.google.com/store/apps/details?id=org.hackesta.tweet2pic"
-                >Play Store</a
-              >
-                
-              </div>
-            </div>
-            
-            <div class="project">
-              <h2>Kashmiri Stickers</h2>
-              <p>
-                Whatsapp Stickers Application with Kashmiri Stickers
-              </p>
-              <div class="btn-container">
-                
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-btn"
-                href="https://play.google.com/store/apps/details?id=org.hackesta.kashmiristickers"
-                >Play Store</a
-              >
-                
-              </div>
-            </div>
-            
+            {% endfor %}
             
           </div>
         </section>
@@ -381,34 +319,16 @@
             </p>
           </div>
           <div class="footer-links">
-            
+            {% for social in social_media %}
             <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/haideralipunjabi"
+            href="{{ social.url }}"
             class="footer-link link-line"
           >
-            Github</a
+            {{ social.name }}</a
           >
-            
-            <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://instagram.com/haideralipunjabi"
-            class="footer-link link-line"
-          >
-            Instagram</a
-          >
-            
-            <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/haideralipunjabi"
-            class="footer-link link-line"
-          >
-            Twitter</a
-          >
-            
+            {% endfor %}
             
            
           </div>
