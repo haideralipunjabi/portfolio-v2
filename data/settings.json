@@ -1,8 +1,13 @@
 {
   "name": "Haider Ali Punjabi",
-  "background_color": "",
+  "background_color": "#353B43",
   "subtitle": "Developer",
   "social_media": [
+    {
+      "url": "https://github.com/haideralipunjabi",
+      "name": "Github",
+      "icon": "/assets/img/github.svg"
+    },
     {
       "url": "https://instagram.com/haideralipunjabi",
       "name": "Instagram",

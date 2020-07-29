@@ -46,14 +46,16 @@ fields:
     required: false
     color_format: Hex
 - name: background_color_dark
-  type: text
-  config:
-    required: false
+  type: color
   label: Background Color - Dark
-- name: primary_color
-  type: text
   config:
     required: false
+    color_format: Hex
+- name: primary_color
+  type: color
   label: Primary Color
+  config:
+    required: false
+    color_format: Hex
 pages:
 - data/settings.json
