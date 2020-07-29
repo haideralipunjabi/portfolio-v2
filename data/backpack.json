@@ -2,15 +2,15 @@
   "backpack": [
     {
       "name": "Javascript",
-      "icon": "/assets/img/skills/javascript.svg"
+      "icon": "fab fa-js"
     },
     {
       "name": "CSS",
-      "icon": "/assets/img/skills/css3.svg"
+      "icon": "fab fa-css3"
     },
     {
       "name": "HTML",
-      "icon": "/assets/img/skills/html5.svg"
+      "icon": "fab fa-html5"
     }
   ]
 }

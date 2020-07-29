@@ -29,7 +29,7 @@
   top: 0;
   bottom: 0;
   width: 6px;
-  background: #44465c;
+  background: var(--primary);
   left: 50%;
   margin-left: -3px;
 }
@@ -48,7 +48,7 @@
   right: -13px;
   width: 25px;
   height: 25px;
-  background: #232535;
+  background: var(--bg-dark);
   border-radius: 50%;
   transform: translateY(-50%);
 }
@@ -72,9 +72,9 @@
   position: absolute;
   top: 50%;
   right: 30px;
-  border: 10px solid #232535;
+  border: 10px solid var(--bg-dark);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #232535;
+  border-color: transparent transparent transparent var(--bg-dark);
   transform: translateY(-50%);
 }
 
@@ -85,15 +85,15 @@
   position: absolute;
   top: 50%;
   left: 30px;
-  border: 10px solid #232535;
+  border: 10px solid var(--bg-dark);
   border-width: 10px 10px 10px 0;
-  border-color: transparent #232535 transparent transparent;
+  border-color: transparent var(--bg-dark) transparent transparent;
   transform: translateY(-50%);
 }
 
 .timeline-item-body {
   padding: 20px;
-  background: #232535;
+  background: var(--bg-dark);
   color: white;
   font-size: 1.1rem;
 }
@@ -116,7 +116,7 @@
 .timeline-item-header h4 {
   font-size: 1rem;
   color: white;
-  background-color: #44465c;
+  background-color: var(--bg-dark);
   padding: 5px;
 }
 
@@ -134,7 +134,7 @@
   .timeline-item::before {
     left: 45px;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #232535 transparent transparent;
+    border-color: transparent var(--bg-dark) transparent transparent;
   }
 
   .left::after,

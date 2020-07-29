@@ -1,24 +1,25 @@
 {
   "name": "Haider Ali Punjabi",
-  "background_color": "#AFBAC4",
+  "url": "https://v2.haideralipunjabi.com",
+  "background_color": "#353b43",
   "subtitle": "Developer",
   "social_media": [
     {
       "url": "https://github.com/haideralipunjabi",
       "name": "Github",
-      "icon": "/assets/img/github.svg"
+      "icon": "fab fa-github"
     },
     {
       "url": "https://instagram.com/haideralipunjabi",
       "name": "Instagram",
-      "icon": ""
+      "icon": "fab fa-instagram"
     },
     {
       "url": "https://twitter.com/haideralipunjabi",
       "name": "Twitter",
-      "icon": "/assets/img/twitter.svg"
+      "icon": "fab fa-twitter"
     }
   ],
-  "background_color_dark": "#353B43",
+  "background_color_dark": "#242930",
   "primary_color": "#57CC8A"
 }

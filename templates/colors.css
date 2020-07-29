@@ -1,0 +1,5 @@
+:root {
+    --bg: {{ background_color }};
+    --bg-dark: {{ background_color_dark }};
+    --primary: {{ primary_color }};
+}

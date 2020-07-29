@@ -30,7 +30,7 @@ fields:
       required: false
     label: URL
   - name: icon
-    type: file
+    type: text
     config:
       maxSize: 64
     label: Icon

@@ -1,8 +1,4 @@
 :root {
-  --bg: #353b43;
-  --bg-dark: afbac4;
-  --primary: #57cc8a;
-
   --nav-link-fs: 1.2rem;
   --main-p-fs: 1rem;
   --main-h1-fs: 3rem;
@@ -51,7 +47,7 @@ body.no-scroll {
 }
 
 a:focus, button:focus, input:focus, textarea:focus {
-  outline: 2px dotted #bbbbbb;
+  outline: 2px dotted var(--primary);
 }
 
 a {
@@ -62,9 +58,9 @@ a {
   padding-top: 65px;
   margin-top: 10px;
   font-size: var(--section-title-fs);
-  color: #bbbbbb;
+  color: var(--primary);
   padding-bottom: 10px;
-  border-bottom: 2px solid #232535;
+  border-bottom: 2px solid var(--bg-dark);
 }
 
 /* Menu */
@@ -78,7 +74,7 @@ a {
   z-index: 100;
   width: 100%;
   height: 100vh;
-  background-color: #232535;
+  background-color: var(--bg-dark);
   transition: 0.2s;
 }
 
@@ -98,7 +94,7 @@ a {
 .menu-link {
   margin-bottom: 30px;
   text-decoration: none;
-  color: #bbbbbb;
+  color: var(--primary);
   font-size: 2rem;
   transition: color 0.3s;
 }
@@ -159,7 +155,7 @@ a {
 .nav-link {
   margin-left: 40px;
   text-decoration: none;
-  color: #bbbbbb;
+  color: var(--primary);
   font-size: var(--nav-link-fs);
   transition: color 0.3s;
   display: none;
@@ -212,7 +208,7 @@ a {
 }
 
 .main p {
-  color: #bbbbbb;
+  color: var(--primary);
   font-size: var(--main-p-fs);
   transition: font 0.3s;
 }
@@ -246,13 +242,13 @@ a {
 
 .btn-container .btn:first-child {
   font-weight: bold;
-  background-color: #bbbbbb;
+  background-color: var(--primary);
   color: var(--bg);
 }
 
 .btn-container .btn:last-child {
   margin-left: 20px;
-  color: #bbbbbb;
+  color: var(--primary);;
   font-weight: bold;
 }
 
@@ -277,11 +273,14 @@ a {
   right: 0%;
   bottom: 2%;
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.socials img {
-  width: 2rem;
-  height: 2rem;
+.socials i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
 }
 
 /* Skills section */
@@ -300,11 +299,11 @@ a {
   font-weight: bold;
 }
 
-.skill img {
+.skill i {
+  font-size: 6rem;
   margin-bottom: 10px;
-  max-width: 100px;
+  color: var(--primary);
 }
-
 /* Project section */
 
 .projects {
@@ -323,7 +322,7 @@ a {
   width: 100%;
   height: 250px;
   padding: 20px;
-  background-color: #232535;
+  background-color: var(--bg-dark);
 }
 
 .project h2 {
@@ -377,7 +376,7 @@ a {
 }
 
 .form-group label {
-  color: #bbbbbb;
+  color: var(--primary);;
   margin-bottom: 5px;
   font-size: 1.2rem;
 }
@@ -388,8 +387,8 @@ a {
   min-width: 100%;
   max-width: 100%;
   min-height: 50px;
-  background-color: #232535;
-  border: 1px solid #232535;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--bg-dark);
   color: white;
   font-size: 1rem;
   font-family: sans-serif;
@@ -401,7 +400,7 @@ a {
   align-self: flex-end;
   cursor: pointer;
   position: relative;
-  border: 2px solid #232535;
+  border: 2px solid var(--bg-dark);
   transition: 0.3s;
   background-color: var(--bg);
   color: white;
@@ -417,7 +416,7 @@ a {
   width: 0%;
   height: 100%;
   transition: 0.3s;
-  background-color: #232535;
+  background-color: var(--bg-dark);
   color: white;
   z-index: -1;
 }
@@ -441,7 +440,7 @@ a {
 .footer {
   margin-top: 2rem;
   width: 100%;
-  border-top: 1px solid #232535;
+  border-top: 1px solid var(--bg-dark);
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -464,7 +463,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #bbbbbb;
+  color: var(--primary);;
   font-size: 1.2rem;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -476,7 +475,7 @@ a {
 
 .footer-center {
   margin-top: 20px;
-  color: #bbbbbb;
+  color: var(--primary);;
 }
 
 .footer-center a {
@@ -495,11 +494,11 @@ a {
   }
   .btn-container .btn:first-child:hover {
     background: none;
-    border: 1px solid #bbbbbb;
+    border: 1px solid var(--primary);;
     color: white;
   }
   .btn-container .btn:last-child:hover {
-    border: 1px solid #bbbbbb;
+    border: 1px solid var(--primary);;
     color: white;
   }
   .scroll-down:hover {
@@ -576,9 +575,13 @@ a {
     --content-width: 80%;
     grid-template-columns: repeat(1, 1fr);
   }
-  .socials img {
-    width: 2rem;
-    height: 2rem;
+  .socials {
+    width: 15%;
+    flex-direction: row;
+  }
+  .socials i {
+    font-size: 2rem;
+    margin-right: 10px;
   }
   .skills-container {
     grid-template-columns: repeat(3, 1fr);
@@ -653,7 +656,7 @@ a {
   font-size: 30px;
   text-decoration: none;
   color: white;
-  background-color: #232535;
+  background-color: var(--bg-dark);
 }
 
 /* Animations */

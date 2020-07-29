@@ -1,3 +1,5 @@
 /assets/img/projects
 # Local Netlify folder
 .netlify
+index.html
+assets/css/colors.css
