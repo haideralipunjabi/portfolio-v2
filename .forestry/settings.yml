@@ -5,6 +5,14 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: data/backpack.json
+  label: Backpack
+  match: "**/*"
+- type: document
+  path: data/projects.json
+  label: Projects
+  match: "**/*"
+- type: document
   path: data/settings.json
   label: Site Settings
 upload_dir: assets/img
