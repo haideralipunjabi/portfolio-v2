@@ -1,17 +1,11 @@
 {
     "start_url": "/",
-    "short_name": "Casper Iversen",
-    "description": "Casper Iversen Portfolio",
+    "short_name": "Haider Ali Punjabi",
+    "description": "Haider Ali Punjabi Portfolio",
     "background_color": "#343647",
     "display": "standalone",
     "scope": "/",
     "theme_color": "#343647",
-    "name": "Casper Iversen",
-    "icons": [
-        {
-            "src": "./img/Icon.png",
-            "type": "image/png",
-            "sizes": "1080x1080"
-        }
-    ]
+    "name": "Haider Ali Punjabi"
+    
 }

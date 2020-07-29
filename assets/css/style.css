@@ -1,5 +1,8 @@
 :root {
-  --bg: #343647;
+  --bg: #353b43;
+  --bg-dark: afbac4;
+  --primary: #57cc8a;
+
   --nav-link-fs: 1.2rem;
   --main-p-fs: 1rem;
   --main-h1-fs: 3rem;
