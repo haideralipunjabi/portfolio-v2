@@ -2,22 +2,30 @@
 label: Timeline
 hide_body: true
 fields:
-- name: title
-  type: text
+- name: timeline
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: time
+    type: text
+    config:
+      required: false
+    label: Time
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
   config:
-    required: false
-  label: Title
-- name: time
-  type: text
-  config:
-    required: false
-  label: Time
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Description
+    min: 
+    max: 
+    labelField: 
+  label: Timeline

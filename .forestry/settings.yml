@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/timeline.json
   label: Timeline
-  match: "**/*"
 - type: document
   path: data/backpack.json
   label: Backpack
