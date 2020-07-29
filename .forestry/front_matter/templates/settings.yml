@@ -45,3 +45,5 @@ fields:
     max: 
     labelField: 
   label: Social Media
+pages:
+- data/settings.json
