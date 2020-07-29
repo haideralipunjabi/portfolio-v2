@@ -1,0 +1,16 @@
+{
+  "backpack": [
+    {
+      "name": "Javascript",
+      "icon": "/assets/img/skills/javascript.svg"
+    },
+    {
+      "name": "CSS",
+      "icon": "/assets/img/skills/css3.svg"
+    },
+    {
+      "name": "HTML",
+      "icon": "/assets/img/skills/html5.svg"
+    }
+  ]
+}

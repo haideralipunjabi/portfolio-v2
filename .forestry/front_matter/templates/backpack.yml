@@ -20,3 +20,5 @@ fields:
     max: 
     labelField: 
   label: Backpack
+pages:
+- data/backpack.json
