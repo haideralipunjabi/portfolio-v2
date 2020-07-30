@@ -1,6 +1,51 @@
 {
   "timeline": [
     {
+      "title": "Iftarkar",
+      "time": "April - May 2020",
+      "description": "<p>Web App for Ramadhan Timings in Kashmir</p>"
+    },
+    {
+      "title": "CovidKashmir",
+      "time": "March 2020 - Present",
+      "description": "<p>Co-Developed a webiste tracking COVID-19 cases in Jammu &amp; Kashmir, along with providing related information &amp; visualisations</p>"
+    },
+    {
+      "title": "Event",
+      "time": "December 2019",
+      "description": "<p><strong>One week STTP on Explainable Artificial Intelligence and Machine Learning for Multimedia Data</strong> at <a href=\"https://iitjammu.ac.in/\" target=\"_blank\">IIT Jammu</a></p>"
+    },
+    {
+      "title": "HPFanfiction Recommender",
+      "time": "July 2019",
+      "description": "<p>A website showing story and author recommendation based on what is being recommended over <a href=\"https://www.reddit.com/r/HPfanfiction\" target=\"_blank\">r/HPFanfiction</a></p>"
+    },
+    {
+      "title": "polybar-browsermediacontrol",
+      "time": "April 2019",
+      "description": "<p>A Browser Media Control module for Polybar</p>"
+    },
+    {
+      "title": "Pearls of Speech",
+      "time": "February 2019",
+      "description": "<p>An Action on Google that returns a random quote from Ghurar al-Hikam wa Durar al-Kalim</p>"
+    },
+    {
+      "title": "polybar-kdeconnect",
+      "time": "January 2019",
+      "description": "<p>KDEConnect module for Polybar</p>"
+    },
+    {
+      "title": "Kashmiri Stickers for Whatsapp",
+      "time": "November 2018",
+      "description": ""
+    },
+    {
+      "title": "atom-icons",
+      "time": "September 2018",
+      "description": "<p>Custom Icons for Atom Editor</p>"
+    },
+    {
       "title": "Tweet2Pic",
       "time": "August 2018",
       "description": "<p>Released v1 of <a href=\"https://play.google.com/store/apps/details?id=org.hackesta.tweet2pic\" target=\"_blank\">Tweet2Pic</a></p>"
