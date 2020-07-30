@@ -1,6 +1,16 @@
 {
   "timeline": [
     {
+      "title": "Event",
+      "time": "October 2017",
+      "description": "<p>Passed out from High School</p>"
+    },
+    {
+      "title": "Techknow 2017",
+      "time": "2017",
+      "description": "<p>Attended Robotics workshop at TechKnow 2017 organised by <a href=\"http://cybercrew.dpssrinagar.com/\" target=\"_blank\">CyberCrew DPS</a> at <a href=\"http://dpssrinagar.com/\" target=\"_blank\">DPS Srinagar</a></p>"
+    },
+    {
       "title": "CommunityClouds",
       "time": "September 2017",
       "description": "<p>Collaborated in CommunityClouds - A p5.js based Cloud Generator</p>"
