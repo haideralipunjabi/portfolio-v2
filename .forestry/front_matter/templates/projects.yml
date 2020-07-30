@@ -37,6 +37,10 @@ fields:
       max: 
       labelField: 
     label: Buttons
+  - name: tags
+    type: tag_list
+    default: []
+    label: Tags
   config:
     min: 
     max: 
