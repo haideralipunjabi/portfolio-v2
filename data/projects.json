@@ -1,20 +1,6 @@
 {
   "projects": [
     {
-      "name": "Custom Icons for Atom",
-      "description": "A project for custom Atom Icons.",
-      "buttons": [
-        {
-          "name": "Github",
-          "link": "https://github.com/HackeSta/atom-icons",
-          "icon": "fab fa-github"
-        }
-      ],
-      "tags": [
-        "fas fa-code"
-      ]
-    },
-    {
       "name": "Tweet2Pic",
       "buttons": [
         {
@@ -27,6 +13,72 @@
       "tags": [
         "fab fa-android",
         "fab fa-java"
+      ]
+    },
+    {
+      "name": "CovidKashmir",
+      "description": "<p>A website tracking COVID-19 cases in Jammu &amp; Kashmir, along with providing related information &amp; visualisations - March 2020</p>",
+      "tags": [
+
+      ],
+      "buttons": [
+        {
+          "name": "Website",
+          "link": "https://covidkashmir.org",
+          "icon": "fas fa-globe-asia"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/haideralipunjabi/covid19kashmir",
+          "icon": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "name": "Iftarkar",
+      "description": "<p>Countdown Web App for Ramadan Timings in Jammu &amp; Kashmir</p>",
+      "buttons": [
+        {
+          "name": "Website",
+          "link": "https://iftarkar.com",
+          "icon": "fas fa-globe-asia"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/haideralipunjabi/iftarkar",
+          "icon": "fab fa-github"
+        }
+      ],
+      "tags": [
+
+      ]
+    },
+    {
+      "name": "Harry Potter Fanfiction Recommender",
+      "description": "<p>A website showing story and author recommendation based on what is being recommended over <a href=\"https://www.reddit.com/r/HPfanfiction\">r/HPFanfiction</a></p>",
+      "buttons": [
+        {
+          "name": "Website",
+          "link": "https://hpffrec.hackesta.org/",
+          "icon": "fas fa-globe-asia"
+        }
+      ],
+      "tags": [
+
+      ]
+    },
+    {
+      "name": "Custom Icons for Atom",
+      "description": "A project for custom Atom Icons.",
+      "buttons": [
+        {
+          "name": "Github",
+          "link": "https://github.com/HackeSta/atom-icons",
+          "icon": "fab fa-github"
+        }
+      ],
+      "tags": [
+        "fas fa-code"
       ]
     },
     {
