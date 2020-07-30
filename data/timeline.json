@@ -1,14 +1,24 @@
 {
   "timeline": [
     {
+      "title": "CommunityClouds",
+      "time": "September 2017",
+      "description": "<p>Collaborated in CommunityClouds - A p5.js based Cloud Generator</p>"
+    },
+    {
+      "title": "12oclocks",
+      "time": "September 2017",
+      "description": "<p>Collaborated on a p5.js port of John Maeda's 12 o'clocks</p>"
+    },
+    {
+      "title": "Worked with Four Seasons",
+      "time": "April 2017 - October 2017",
+      "description": ""
+    },
+    {
       "title": "Django Quiz Software",
       "time": "May - June 2017",
       "description": "A Quiz Software made with Django"
-    },
-    {
-      "title": "Evolve CP Calculator",
-      "time": "July 2016",
-      "description": "An Android Tool for the game Pokemon GO"
     },
     {
       "description": "Presented KPC & other projects at The Youth Speaks organised by Four Seasons",
@@ -19,6 +29,11 @@
       "title": "KPC",
       "time": "December 2016 - June 2017",
       "description": "<p>An Android client for <a href=\"http://www.kashmirphotographyclub.com/\" title=\"\" target=\"_blank\">Kashmir Photography Club</a></p>"
+    },
+    {
+      "title": "Evolve CP Calculator",
+      "time": "July 2016",
+      "description": "An Android Tool for the game Pokemon GO"
     }
   ]
 }
