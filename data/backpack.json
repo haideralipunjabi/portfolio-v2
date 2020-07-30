@@ -1,12 +1,44 @@
 {
   "backpack": [
     {
+      "name": "Raspberry Pi",
+      "icon": "fab fa-raspberry-pi"
+    },
+    {
+      "name": "Linux",
+      "icon": "fab fa-linux"
+    },
+    {
+      "name": "Font Awesome",
+      "icon": "fab font-awesome"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "fab fa-bootstrap"
+    },
+    {
+      "name": "Android - Java",
+      "icon": "fab fa-java"
+    },
+    {
+      "name": "Github",
+      "icon": "fab fa-github-square"
+    },
+    {
+      "name": "Git",
+      "icon": "fab fa-git-alt"
+    },
+    {
+      "name": "Python",
+      "icon": "fab fa-python"
+    },
+    {
       "name": "Javascript",
       "icon": "fab fa-js"
     },
     {
       "name": "CSS",
-      "icon": "fab fa-css3"
+      "icon": "fab fa-css3-alt"
     },
     {
       "name": "HTML",
