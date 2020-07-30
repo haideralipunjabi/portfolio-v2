@@ -1,4 +1,17 @@
 ---
 label: FOSS Contributions
 hide_body: true
-fields: []
+fields:
+- name: contributions
+  type: field_group_list
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Contributions
