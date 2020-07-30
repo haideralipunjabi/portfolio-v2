@@ -160,7 +160,7 @@
                 rel="noopener noreferrer"
                 class="project-btn"
                 href="{{ button.link }}"
-                >{{ button.name }}</a
+                ><i class="{{ button.icon }}"></i>{{ button.name }}</a
               >
                 {% endfor %}
               </div>
@@ -169,17 +169,59 @@
             
           </div>
         </section>
-
-        <section class="section about" id="about-section">
-          <h1 class="section-title">About Me</h1>
-          <p>
-            Hello, I'm Casper! I am a <span id="age"></span>y/o programmer and
-            student. I Love programming a lot of things, making websites, bots,
-            applications and more. I'm a self taught developer and I've been
-            programming for about 2 years now and still learning new
-            technologies every day, mostly focusing on React and design at the
-            moment.
-          </p>
+        <section class="section foss" id="section-foss">
+          <h1 class="section-title">Open Source</h1>
+          <div class="statistics-container">
+            <div>
+              <h1>{{ github.repo_count  }}</h1>
+              <p>Repositories</p>
+            </div>
+            <div>
+              <h1>{{ github.stargazers }}</h1>
+              <p>Stargazers</p>
+            </div>
+            <div>
+              <h1>{{ github.forks }}</h1>
+              <p>Forks</p>
+            </div>
+          </div>
+        </section>
+        <section class="section projects" id="foss-projects-section">
+          <h1 class="section-title">Popular FOSS Projects</h1>
+          <div class="projects-container">
+            {% for project in github.most_popular %}
+            <div class="project">
+              
+              <h2>{{ project.name }}</h2>
+              <p>
+                {{ project.description }}
+              </p>
+              <br>
+              <p>
+                <i class="far fa-star"></i> {{ project.stargazers_count }}
+                <i style="margin-left: 5px;" class="fas fa-code-branch"></i> {{ project.forks }}
+              </p>
+              <div class="btn-container">
+                <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-btn"
+                href="{{ project.html_url }}"
+                ><i class="fab fa-github"></i>View on Github</a
+              >
+              </div>
+            </div>
+            {% endfor %}
+            
+          </div>
+        </section>
+        <section class="section blog-posts" id="blog-posts-section">
+            <h1 class="section-title">Recent Blogs</h1>
+            <ul>
+              {% for post in blog_posts %}
+                <li><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
         </section>
 
         <section class="section timeline-section" id="timeline-section">
