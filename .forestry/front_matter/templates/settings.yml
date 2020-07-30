@@ -39,6 +39,41 @@ fields:
     max: 
     labelField: 
   label: Social Media
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type
+- name: og_image
+  type: file
+  config:
+    maxSize: 64
+  label: OG Image
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: base_url
+  type: text
+  config:
+    required: false
+  label: Base URL
+- name: primary_color
+  type: color
+  label: Primary Color
+  config:
+    required: false
+    color_format: Hex
 - name: background_color
   type: color
   label: Background Color
@@ -48,12 +83,6 @@ fields:
 - name: background_color_dark
   type: color
   label: Background Color - Dark
-  config:
-    required: false
-    color_format: Hex
-- name: primary_color
-  type: color
-  label: Primary Color
   config:
     required: false
     color_format: Hex
