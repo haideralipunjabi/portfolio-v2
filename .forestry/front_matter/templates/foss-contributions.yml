@@ -15,3 +15,5 @@ fields:
     max: 
     labelField: 
   label: Contributions
+pages:
+- data/foss-contributions.json

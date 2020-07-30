@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/foss-contributions.json
   label: FOSS Contributions
-  match: "**/*"
 - type: document
   path: data/timeline.json
   label: Timeline
