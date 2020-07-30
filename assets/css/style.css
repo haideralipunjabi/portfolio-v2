@@ -511,7 +511,7 @@ a {
 
 .section.blog-posts a {
   color: var(--primary);
-  font-size: var(--nav-link-fs);
+  font-size: 2rem;
 }
 
 .section.blog-posts li {
@@ -524,8 +524,11 @@ a {
 
 .statistics-container {
   display: flex;
-  justify-content: space-around;
   color: white;
+  column-gap: 8rem;
+  row-gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .statistics-container div {
   display: flex;
@@ -533,7 +536,7 @@ a {
   align-items: center;
 }
 .statistics-container h1 {
-  font-size: var(--main-h1-fs);
+  font-size: 5rem;
   color: var(--primary);
 }
 .statistics-container p {

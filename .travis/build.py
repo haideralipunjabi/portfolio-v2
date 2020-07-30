@@ -14,6 +14,7 @@ templateEnv = jinja2.Environment(loader=templateLoader)
 
 BLOG_RSS_URL = "https://blog.haideralipunjabi.com/index.xml"
 GITHUB_API_URL = "https://api.github.com/users/%s/repos?per_page=100&page=%s"
+FOSS_CONTRIBUTIONS_DATA = "data/foss-contributions.json"
 def get_blog_posts(num):
     feed = feedparser.parse(BLOG_RSS_URL)
     return {"blog_posts":feed['entries'][:num]}
@@ -39,12 +40,21 @@ def get_github_data(username):
             "most_popular": most_popular
         }
     }
-
+def get_foss_contributions():
+    contributions = json.load(open(FOSS_CONTRIBUTIONS_DATA,"r"))["contributions"]
+    contributions_data = []
+    for contribution in contributions:
+        api_url = contribution["link"].replace("github.com","api.github.com/repos")
+        data = requests.get(api_url).json()
+        contributions_data.append(data)
+    return {
+        "contributions": contributions_data
+    }
 templates = [
     {
         "input": "index.html",
         "data_files": ["backpack.json","settings.json","projects.json","timeline.json"],
-        "data":[get_blog_posts(5),get_github_data("haideralipunjabi")],
+        "data":[get_blog_posts(5),get_github_data("haideralipunjabi"),get_foss_contributions()],
         "output": "index.html"
     },
     {
