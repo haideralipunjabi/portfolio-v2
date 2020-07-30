@@ -32,6 +32,11 @@ fields:
       config:
         required: false
       label: Link
+    - name: icon
+      type: text
+      config:
+        required: false
+      label: Icon
     config:
       min: 
       max: 
