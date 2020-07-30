@@ -1,6 +1,11 @@
 {
   "timeline": [
     {
+      "title": "Tweet2Pic",
+      "time": "August 2018",
+      "description": "<p>Released v1 of <a href=\"https://play.google.com/store/apps/details?id=org.hackesta.tweet2pic\" target=\"_blank\">Tweet2Pic</a></p>"
+    },
+    {
       "title": "Event",
       "time": "May 2018",
       "description": "<p>Started College - Integrated Masters in Computer Applications</p>"
