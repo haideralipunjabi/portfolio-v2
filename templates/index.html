@@ -97,7 +97,7 @@
                 rel="noopener noreferrer"
                 href="{{ social.url }}"
               >
-                <i class="{{ social.icon }}"></i>
+                <i class="{{ social.icon }}">{{ social.name }}</i>
               </a>
             {% endfor %}
           </div>
@@ -243,7 +243,7 @@
               <div class="timeline-item-body">
                 <div class="timeline-item-header">
                   <p>{{ item.time }}</p>
-                  <h4>{{ item.title }}</h4>
+                  <p class="title">{{ item.title }}</p>
                 </div>
                 {{ item.description }}
               </div>

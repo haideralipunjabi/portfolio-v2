@@ -144,7 +144,7 @@
   font-weight: bold;
 }
 
-.timeline-item-header h4 {
+.timeline-item-header .title {
   font-size: 1rem;
   color: white;
   background-color: var(--bg-dark);
