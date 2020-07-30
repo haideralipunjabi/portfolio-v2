@@ -6,7 +6,8 @@
       "buttons": [
         {
           "name": "Github",
-          "link": "https://github.com/HackeSta/atom-icons"
+          "link": "https://github.com/HackeSta/atom-icons",
+          "icon": "fab fa-github"
         }
       ],
       "tags": [
@@ -18,7 +19,8 @@
       "buttons": [
         {
           "name": "Play Store",
-          "link": "https://play.google.com/store/apps/details?id=org.hackesta.tweet2pic"
+          "link": "https://play.google.com/store/apps/details?id=org.hackesta.tweet2pic",
+          "icon": "fab fa-google-play"
         }
       ],
       "description": "Tweet2Pic is a small tool, which can be used to share your Twitter Tweets in the form of an image.",
@@ -32,7 +34,8 @@
       "buttons": [
         {
           "link": "https://play.google.com/store/apps/details?id=org.hackesta.kashmiristickers",
-          "name": "Play Store"
+          "name": "Play Store",
+          "icon": "fab fa-google-play"
         }
       ],
       "description": "Whatsapp Stickers Application with Kashmiri Stickers",
