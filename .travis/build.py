@@ -70,7 +70,6 @@ templates = [
 
 
 def gen_og():
-    os.system("mkdir assets/favicons")
     settings = json.load(open("data/settings.json","r"))
     template = templateEnv.get_template("templates/manifest")
     print(template.render(icons=ICONS,**settings),file=open("assets/manifest.json","w"))
