@@ -325,6 +325,27 @@ a {
   background-color: var(--bg-dark);
 }
 
+.project-tags {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-tags i {
+  color: var(--bg-dark);
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  text-align: center;
+}
+.project-tags i::before {
+  vertical-align: middle;
+}
+
 .project h2 {
   color: white;
   margin-bottom: 10px;

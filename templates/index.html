@@ -144,6 +144,11 @@
           <div class="projects-container">
             {% for project in projects %}
             <div class="project">
+              <div class="project-tags">
+                {% for tag in project.tags %}
+                <i class="{{ tag }}"></i>
+                {% endfor %}
+              </div>
               <h2>{{ project.name }}</h2>
               <p>
                 {{ project.description }}
