@@ -19,7 +19,7 @@
       "name": "CovidKashmir",
       "description": "<p>A website tracking COVID-19 cases in Jammu &amp; Kashmir, along with providing related information &amp; visualisations - March 2020</p>",
       "tags": [
-
+        "fas fa-globe-asia"
       ],
       "buttons": [
         {
@@ -50,7 +50,7 @@
         }
       ],
       "tags": [
-
+        "fas fa-globe-asia"
       ]
     },
     {
@@ -64,7 +64,7 @@
         }
       ],
       "tags": [
-
+        "fas fa-globe-asia"
       ]
     },
     {

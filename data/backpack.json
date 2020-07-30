@@ -1,48 +1,48 @@
 {
   "backpack": [
     {
-      "name": "Raspberry Pi",
-      "icon": "fab fa-raspberry-pi"
-    },
-    {
-      "name": "Linux",
-      "icon": "fab fa-linux"
-    },
-    {
-      "name": "Font Awesome",
-      "icon": "fab font-awesome"
-    },
-    {
-      "name": "Bootstrap",
-      "icon": "fab fa-bootstrap"
-    },
-    {
-      "name": "Android - Java",
-      "icon": "fab fa-java"
-    },
-    {
-      "name": "Github",
-      "icon": "fab fa-github-square"
-    },
-    {
-      "name": "Git",
-      "icon": "fab fa-git-alt"
-    },
-    {
       "name": "Python",
       "icon": "fab fa-python"
     },
     {
-      "name": "Javascript",
-      "icon": "fab fa-js"
+      "name": "HTML",
+      "icon": "fab fa-html5"
     },
     {
       "name": "CSS",
       "icon": "fab fa-css3-alt"
     },
     {
-      "name": "HTML",
-      "icon": "fab fa-html5"
+      "name": "Git",
+      "icon": "fab fa-git-alt"
+    },
+    {
+      "name": "Github",
+      "icon": "fab fa-github-square"
+    },
+    {
+      "name": "Javascript",
+      "icon": "fab fa-js"
+    },
+    {
+      "name": "Android - Java",
+      "icon": "fab fa-java"
+    },
+    {
+      "name": "Linux",
+      "icon": "fab fa-linux"
+    },
+    {
+      "name": "Raspberry Pi",
+      "icon": "fab fa-raspberry-pi"
+    },
+    {
+      "name": "Font Awesome",
+      "icon": "fab fa-font-awesome"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "fab fa-bootstrap"
     }
   ]
 }
