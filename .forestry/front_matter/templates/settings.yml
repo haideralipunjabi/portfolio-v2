@@ -63,11 +63,6 @@ fields:
     schema:
       format: markdown
   label: Description
-- name: base_url
-  type: text
-  config:
-    required: false
-  label: Base URL
 - name: primary_color
   type: color
   label: Primary Color

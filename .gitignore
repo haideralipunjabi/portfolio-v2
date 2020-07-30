@@ -4,3 +4,6 @@
 /index.html
 assets/css/colors.css
 assets/favicons/
+assets/manifest.json
+/og.html
+*.xcf

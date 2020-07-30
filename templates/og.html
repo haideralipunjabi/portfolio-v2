@@ -1,15 +1,30 @@
-<meta name="theme-color" content="{{ appcolor }}"></meta>
+<meta name="theme-color" content="{{ primary_color }}"></meta>
 {% for icon in icons %}
-<link href="{{ icon .src }}" rel="icon" sizes="{{ icon.sizes }}" />
+<link href="/assets/favicons/icon-{{ icon }}x{{ icon }}.png" rel="icon" sizes="{{ icon }}x{{ icon }}" />
 {% endfor %}
 <link href="/assets/favicons/icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
 <link href="/assets/favicons/icon-180x180.png" rel="apple-touch-icon-precomposed">
 <link rel="icon" href="/assets/favicons/icon-32x32.png" sizes="32x32">
-<link color="{{ appcolor }}" href="/assets/media/icon.svg" rel="mask-icon" />
+<link color="{{ primary_color }}" href="/assets/media/icon.svg" rel="mask-icon" />
 <link href="/assets/favicons/favicon.ico?v=2" rel="shortcut icon" />
-<meta name="msapplication-TileColor" content="{{ bgcolor }}">
+<meta name="msapplication-TileColor" content="{{ background_color }}">
 <meta name="msapplication-TileImage" content="/assets/favicons/icon-144x144.png">
 <link rel="shortcut icon" sizes="196x196" href="/assets/favicons/icon-196x196.png">
-<meta name="application-name" content="{{ appname }}">
-<meta name="msapplication-tooltip" content="{{ appname }}">
+<meta name="application-name" content="{{ title }}">
+<meta name="msapplication-tooltip" content="{{ title }}">
 <meta name="msapplication-config" content="/assets/favicons/ieconfig.xml">
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:url" content="{{ url }}" />
+<meta property="og:type" content="{{ type }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta name="theme-color" content="{{ primary_color }}" />
+<meta property="og:color" content="{{ primary_color }}" />
+<meta property="og:image" content="{{ og_image }}" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:title" content="{{ title }}" />
+<meta property="twitter:description" content="{{ description }}" />
+<meta property="twitter:url" content="{{ url }}" />
+<meta property="twitter:image" content="{{ og_image }}" />
+<meta name="description" content="{{ description }}" />
+<link rel="canonical" href="{{ url }}" />
+<meta name="keywords" content="{{ keywords }}" />

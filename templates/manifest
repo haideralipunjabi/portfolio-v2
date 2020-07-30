@@ -1,0 +1,18 @@
+{
+    "start_url": "/",
+    "short_name": "{{ title }}",
+    "description": "{{ description }}",
+    "background_color": "{{ background_color }}",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "{{ primary_color }}",
+    "name": "{{ title }}",
+    "icons": [
+        {% for icon in icons%}
+        {
+          "src": "/assets/favicons/icon-{{ icon }}x{{ icon }}.png",
+          "type": "image/png", "sizes": "{{ icon }}x{{ icon }}"
+        }{{ "," if not loop.last }}
+        {% endfor %}
+    ]
+}
