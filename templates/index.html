@@ -259,7 +259,7 @@
 
         <section class="section timeline-section" id="timeline-section">
           <h1 class="section-title">Experience Timeline</h1>
-          <div class="timeline">
+          <div class="timeline timeline-collapsed">
             {% for item in timeline %}
               
 
@@ -273,6 +273,16 @@
               </div>
             </div>
             {% endfor %}
+            <div class="timeline-button">
+              <span class="more">
+                <p>Show More</p>
+                <img src="./assets/img/arrow_down.svg" alt="Scroll down" />
+              </span>
+              <span class="less">
+                <img src="./assets/img/arrow_down.svg" alt="Scroll down" />
+                <p>Show Less</p>
+              </span>
+            </div>
           </div>
         </section>
 

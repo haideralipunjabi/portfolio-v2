@@ -5,12 +5,12 @@ const config = {
 };
 
 const menu = document.querySelector(".menu");
-const footerIcon = document.querySelector(".footer-icon");
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
 const menuLinks = document.querySelectorAll(".menu-link");
 const navbar = document.getElementById("nav-bar");
 const sticky = navbar.offsetTop;
+const timelineButton = document.querySelector(".timeline-button");
 
 window.onscroll = function shiftNav() {
   if (window.pageYOffset > sticky) {
@@ -62,16 +62,7 @@ contactForm.addEventListener("submit", (e) => {
     });
 });
 
-// footer
-footerIcon.addEventListener("click", () => {
-  document.body.classList.add("rotate");
 
-  setTimeout(() => {
-    document.body.classList.remove("rotate");
-  }, 4000);
-});
-
-// age
-const ageDiv = document.getElementById("age");
-const currentAge = new Date().getFullYear() - 2005;
-ageDiv.textContent = currentAge;
+timelineButton.addEventListener('click',()=>{
+    document.querySelector(".timeline").classList.toggle("timeline-collapsed");
+  })
