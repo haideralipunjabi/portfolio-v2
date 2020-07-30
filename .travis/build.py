@@ -1,6 +1,5 @@
 import jinja2
-from cairosvg import svg2png
-from PIL import Image
+
 
 import json
 import os
@@ -66,6 +65,7 @@ templates = [
         "output": "assets/css/colors.css"
     }
 ]
+
 
 
 
