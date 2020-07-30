@@ -510,7 +510,7 @@ a {
 }
 
 .section.blog-posts a {
-  color: var(--primary);
+  color: white;
   font-size: 2rem;
 }
 
