@@ -21,5 +21,10 @@
     }
   ],
   "background_color_dark": "#242930",
-  "primary_color": "#57CC8A"
+  "primary_color": "#57CC8A",
+  "title": "Haider Ali Punjabi",
+  "type": "people",
+  "og_image": "",
+  "description": "Profile site of Haider Ali Punjabi, developer from Srinagar, Jammu & Kashmir.",
+  "base_url": ""
 }
