@@ -2,8 +2,13 @@
   "timeline": [
     {
       "title": "Event",
+      "time": "May 2018",
+      "description": "<p>Started College - Integrated Masters in Computer Applications</p>"
+    },
+    {
+      "title": "Event",
       "time": "October 2017",
-      "description": "<p>Passed out from High School</p>"
+      "description": "<p>Graduated from High School</p>"
     },
     {
       "title": "Techknow 2017",
