@@ -50,32 +50,33 @@ def get_foss_contributions():
     return {
         "contributions": contributions_data
     }
-templates = [
-    {
-        "input": "index.html",
-        "data_files": ["backpack.json","settings.json","projects.json","timeline.json"],
-        "data":[get_blog_posts(5),get_github_data("haideralipunjabi"),get_foss_contributions()],
-        "output": "index.html"
-    },
-    {
-        "input": "colors.css",
-        "data_files": ["settings.json"],
-        "data":[],
-        "output": "assets/css/colors.css"
-    }
-]
+# templates = [
+#     {
+#         "input": "index.html",
+#         "data_files": ["backpack.json","settings.json","projects.json","timeline.json"],
+#         "data":[get_blog_posts(5),get_github_data("haideralipunjabi"),get_foss_contributions()],
+#         "output": "index.html"
+#     },
+#     {
+#         "input": "colors.css",
+#         "data_files": ["settings.json"],
+#         "data":[],
+#         "output": "assets/css/colors.css"
+#     }
+# ]
 
 
 
-def gen_favicons():
-    icon_svg = "assets/media/icon.svg"
-    manifest = json.load(open("manifest.json","r"))
+def gen_og():
+    os.system("mkdir assets/favicons")
+    icon_svg = "assets/icon.svg"
+    manifest = json.load(open("assets/manifest.json","r"))
     icons = manifest["icons"]
     for icon in icons:
         svg2png(url=icon_svg, write_to=icon["src"][1:], parent_width=int(icon["sizes"].split("x")[0]), parent_height=int(icon["sizes"].split("x")[1]))
     Image.open("assets/favicons/icon-512x512.png").save("assets/favicons/favicon.ico")
-    template = templateEnv.get_template("favicons.html")
-    print(template.render(icons=icons,appname=manifest["short_name"], appcolor=manifest["theme_color"], bgcolor=manifest["background_color"]),file=open("favicons.html","w"))
+    template = templateEnv.get_template("templates/og.html")
+    print(template.render(icons=icons,appname=manifest["short_name"], appcolor=manifest["theme_color"], bgcolor=manifest["background_color"]),file=open("og.html","w"))
 
 
 def gen_templates():
@@ -112,6 +113,6 @@ def gen_sitemap():
 
 
 
-# gen_favicons()
-gen_templates()
+gen_favicons()
+# gen_templates()
 # gen_sitemap()
