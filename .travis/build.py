@@ -72,10 +72,6 @@ templates = [
 def gen_og():
     os.system("mkdir assets/favicons")
     settings = json.load(open("data/settings.json","r"))
-    icon_svg = "assets/icon.svg"    
-    for icon in ICONS:
-        svg2png(url=icon_svg, write_to=f"assets/favicons/icon-{icon}x{icon}.png", parent_width=icon,parent_height=icon)
-    Image.open("assets/favicons/icon-512x512.png").save("assets/favicons/favicon.ico")
     template = templateEnv.get_template("templates/manifest")
     print(template.render(icons=ICONS,**settings),file=open("assets/manifest.json","w"))
     template = templateEnv.get_template("templates/og.html")
