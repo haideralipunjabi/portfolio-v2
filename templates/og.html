@@ -1,6 +1,4 @@
-{% if url|last != '/' %}
-  url=url+/
-{% endif %}
+
 <meta name="theme-color" content="{{ primary_color }}"></meta>
 <meta name=”robots” content="index, follow">
 {% for icon in icons %}
@@ -18,7 +16,7 @@
 <meta name="msapplication-tooltip" content="{{ title }}">
 <meta name="msapplication-config" content="/assets/favicons/ieconfig.xml">
 <meta property="og:title" content="{{ title }}" />
-<meta property="og:url" content="{{ url }}" />
+<meta property="og:url" content="{{ url }}/" />
 <meta property="og:type" content="{{ type }}" />
 <meta property="og:description" content="{{ description }}" />
 <meta name="theme-color" content="{{ primary_color }}" />
@@ -27,7 +25,7 @@
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:title" content="{{ title }}" />
 <meta property="twitter:description" content="{{ description }}" />
-<meta property="twitter:url" content="{{ url }}" />
+<meta property="twitter:url" content="{{ url }}/" />
 <meta property="twitter:image" content="{{ url }}{{ og_image }}" />
 <meta name="description" content="{{ description }}" />
 <link rel="canonical" href="{{ url }}" />
