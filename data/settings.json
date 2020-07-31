@@ -23,8 +23,18 @@
   "background_color_dark": "#242930",
   "primary_color": "#57CC8A",
   "title": "Haider Ali Punjabi",
-  "type": "people",
+  "type": "profile",
   "og_image": "/assets/img/og.jpg",
   "description": "Profile site of Haider Ali Punjabi, developer from Srinagar, Jammu & Kashmir.",
-  "google_analytics_code": "UA-111349580-1"
+  "google_analytics_code": "UA-111349580-1",
+  "keywords": [
+    "haideralipunjabi",
+    "HAliPunjabi",
+    "Haider Ali",
+    "Haider Ali Punjabi",
+    "Kashmir",
+    "Srinagar",
+    "CovidKashmir",
+    "Iftarkar"
+  ]
 }
