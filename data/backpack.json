@@ -43,6 +43,10 @@
     {
       "name": "Bootstrap",
       "icon": "assets/svgs/brands/bootstrap.svg"
+    },
+    {
+      "name": "Travis CI",
+      "icon": "assets/svgs/brands/travis-ci.svg"
     }
   ]
 }

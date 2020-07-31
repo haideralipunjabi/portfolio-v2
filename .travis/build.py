@@ -31,7 +31,7 @@ def get_blog_posts(num):
         
     return {"blog_posts":data[:num]}
 
-def get_github_data(username):
+def get_github_data(username,num):
     repos = []
     page = 1
     while True:
@@ -43,7 +43,7 @@ def get_github_data(username):
     source_repos_len = len(list(filter(lambda repo: repo["fork"]==False,repos)))
     stargazers = reduce(lambda a,b: a+b["stargazers_count"],repos,0)
     forks = reduce(lambda a,b: a+b["forks"],repos,0)
-    most_popular = list(sorted(repos, key=lambda repo: repo['stargazers_count'],reverse=True))[:3]
+    most_popular = list(sorted(repos, key=lambda repo: repo['stargazers_count'],reverse=True))[:num]
     return {
         "github":{
             "repo_count": source_repos_len,
@@ -66,7 +66,7 @@ templates = [
     {
         "input": "index.html",
         "data_files": ["backpack.json","settings.json","projects.json","timeline.json"],
-        "data":[get_blog_posts(4),get_github_data("haideralipunjabi"),get_foss_contributions()],
+        "data":[get_blog_posts(4),get_github_data("haideralipunjabi",4),get_foss_contributions()],
         "output": "index.html"
     },
     {
