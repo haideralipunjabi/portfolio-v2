@@ -30,7 +30,7 @@
   display: block;
 }
 
-.timeline-button .less img {
+.timeline-button .less svg {
   transform: rotateX(180deg);
 }
 

@@ -2,47 +2,47 @@
   "backpack": [
     {
       "name": "Python",
-      "icon": "fab fa-python"
+      "icon": "assets/svgs/brands/python.svg"
     },
     {
       "name": "HTML",
-      "icon": "fab fa-html5"
+      "icon": "assets/svgs/brands/html5.svg"
     },
     {
       "name": "CSS",
-      "icon": "fab fa-css3-alt"
+      "icon": "assets/svgs/brands/css3-alt.svg"
     },
     {
       "name": "Git",
-      "icon": "fab fa-git-alt"
+      "icon": "assets/svgs/brands/git-alt.svg"
     },
     {
       "name": "Github",
-      "icon": "fab fa-github-square"
+      "icon": "assets/svgs/brands/github-square.svg"
     },
     {
       "name": "Javascript",
-      "icon": "fab fa-js"
+      "icon": "assets/svgs/brands/js.svg"
     },
     {
       "name": "Android - Java",
-      "icon": "fab fa-java"
+      "icon": "assets/svgs/brands/java.svg"
     },
     {
       "name": "Linux",
-      "icon": "fab fa-linux"
+      "icon": "assets/svgs/brands/linux.svg"
     },
     {
       "name": "Raspberry Pi",
-      "icon": "fab fa-raspberry-pi"
+      "icon": "assets/svgs/brands/raspberry-pi.svg"
     },
     {
       "name": "Font Awesome",
-      "icon": "fab fa-font-awesome"
+      "icon": "assets/svgs/brands/font-awesome.svg"
     },
     {
       "name": "Bootstrap",
-      "icon": "fab fa-bootstrap"
+      "icon": "assets/svgs/brands/bootstrap.svg"
     }
   ]
 }

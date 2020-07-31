@@ -6,31 +6,31 @@
         {
           "name": "Play Store",
           "link": "https://play.google.com/store/apps/details?id=org.hackesta.tweet2pic",
-          "icon": "fab fa-google-play"
+          "icon": "assets/svgs/brands/google-play.svg"
         }
       ],
       "description": "Tweet2Pic is a small tool, which can be used to share your Twitter Tweets in the form of an image.",
       "tags": [
-        "fab fa-android",
-        "fab fa-java"
+        "assets/svgs/brands/android.svg",
+        "assets/svgs/brands/java.svg"
       ]
     },
     {
       "name": "CovidKashmir",
       "description": "<p>A website tracking COVID-19 cases in Jammu &amp; Kashmir, along with providing related information &amp; visualisations - March 2020</p>",
       "tags": [
-        "fas fa-globe-asia"
+        "assets/svgs/solid/globe-asia.svg"
       ],
       "buttons": [
         {
           "name": "Website",
           "link": "https://covidkashmir.org",
-          "icon": "fas fa-globe-asia"
+          "icon": "assets/svgs/solid/globe-asia.svg"
         },
         {
           "name": "Github",
           "link": "https://github.com/haideralipunjabi/covid19kashmir",
-          "icon": "fab fa-github"
+          "icon": "assets/svgs/brands/github.svg"
         }
       ]
     },
@@ -41,16 +41,16 @@
         {
           "name": "Website",
           "link": "https://iftarkar.com",
-          "icon": "fas fa-globe-asia"
+          "icon": "assets/svgs/solid/globe-asia.svg"
         },
         {
           "name": "Github",
           "link": "https://github.com/haideralipunjabi/iftarkar",
-          "icon": "fab fa-github"
+          "icon": "assets/svgs/brands/github.svg"
         }
       ],
       "tags": [
-        "fas fa-globe-asia"
+        "assets/svgs/solid/globe-asia.svg"
       ]
     },
     {
@@ -60,11 +60,11 @@
         {
           "name": "Website",
           "link": "https://hpffrec.hackesta.org/",
-          "icon": "fas fa-globe-asia"
+          "icon": "assets/svgs/solid/globe-asia.svg"
         }
       ],
       "tags": [
-        "fas fa-globe-asia"
+        "assets/svgs/solid/globe-asia.svg"
       ]
     },
     {
@@ -74,11 +74,11 @@
         {
           "name": "Github",
           "link": "https://github.com/HackeSta/atom-icons",
-          "icon": "fab fa-github"
+          "icon": "assets/svgs/brands/github.svg"
         }
       ],
       "tags": [
-        "fas fa-code"
+        "assets/svgs/solid/code.svg"
       ]
     },
     {
@@ -87,13 +87,13 @@
         {
           "link": "https://play.google.com/store/apps/details?id=org.hackesta.kashmiristickers",
           "name": "Play Store",
-          "icon": "fab fa-google-play"
+          "icon": "assets/svgs/brands/google-play.svg"
         }
       ],
       "description": "Whatsapp Stickers Application with Kashmiri Stickers",
       "tags": [
-        "fab fa-android",
-        "fab fa-java"
+        "assets/svgs/brands/android.svg",
+        "assets/svgs/brands/java.svg"
       ]
     }
   ]

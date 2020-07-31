@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ name }} - Portfolio</title>
-    <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/timeline.css" />
@@ -16,7 +15,7 @@
   <body>
     <aside class="menu" id="menu">
       <button class="close-menu">
-        <img src="./assets/img/close.svg" alt="Close Menu" />
+        {% include '/assets/img/close.svg' %}
       </button>
       <div class="menu-links">
         <a href="#skills-section" class="menu-link">Skills</a>
@@ -32,13 +31,10 @@
         <nav id="nav-bar" class="nav-bar">
           <div class="nav-content">
             <div>
-              <!-- <a href="#" class="nav-icon">
-                <img src="./assets/img/Icon.png" alt="icon" />
-              </a> -->
             </div>
             <div class="nav-links">
               <button class="open-menu">
-                <img src="./assets/img/menu.svg" alt="menu" />
+                {% include '/assets/img/menu.svg' %}
               </button>
               <a
                 data-page="skills-section"
@@ -87,7 +83,7 @@
           </div>
           <a href="#skills-section" class="scroll-down">
             <p>Scroll Down</p>
-            <img src="./assets/img/arrow_down.svg" alt="Scroll down" />
+            {% include '/assets/img/arrow_down.svg' %}
           </a>
 
           <div class="socials">
@@ -98,7 +94,7 @@
                 href="{{ social.url }}"
                 aria-label="{{ social.name }}"
               >
-                <i class="{{ social.icon }}"></i>
+                {% include social.icon  %}
               </a>
             {% endfor %}
           </div>
@@ -109,7 +105,7 @@
           <div class="skills-container">
             {% for skill in backpack %}
             <div class="skill">
-              <i class="{{ skill.icon }}"></i>
+              {% include skill.icon %}
               <p>{{ skill.name }}</p>
             </div>
             {% endfor %}
@@ -123,7 +119,7 @@
             <div class="project">
               <div class="project-tags">
                 {% for tag in project.tags %}
-                <i class="{{ tag }}"></i>
+                {% include tag %}
                 {% endfor %}
               </div>
               <h2>{{ project.name }}</h2>
@@ -137,7 +133,7 @@
                 rel="noopener noreferrer"
                 class="project-btn"
                 href="{{ button.link }}"
-                ><i class="{{ button.icon }}"></i>{{ button.name }}</a
+                >{% include button.icon %}{{ button.name }}</a
               >
                 {% endfor %}
               </div>
@@ -175,8 +171,8 @@
               </p>
               <br>
               <p>
-                <i class="far fa-star"></i> {{ project.stargazers_count }}
-                <i style="margin-left: 5px;" class="fas fa-code-branch"></i> {{ project.forks }}
+                {% include 'assets/svgs/regular/star.svg' %} {{ project.stargazers_count }}
+                {% include 'assets/svgs/solid/code-branch.svg' %} {{ project.forks }}
               </p>
               <div class="btn-container">
                 <a
@@ -184,7 +180,7 @@
                 rel="noopener noreferrer"
                 class="project-btn"
                 href="{{ project.html_url }}"
-                ><i class="fab fa-github"></i>View on Github</a
+                >{% include 'assets/svgs/brands/github.svg' %}View on Github</a
               >
               </div>
             </div>
@@ -208,8 +204,8 @@
               </p>
               <br>
               <p>
-                <i class="far fa-star"></i> {{ project.stargazers_count }}
-                <i style="margin-left: 5px;" class="fas fa-code-branch"></i> {{ project.forks }}
+                {% include 'assets/svgs/regular/star.svg' %} {{ project.stargazers_count }}
+                {% include 'assets/svgs/solid/code-branch.svg' %} {{ project.forks }}
               </p>
               <div class="btn-container">
                 <a
@@ -217,7 +213,7 @@
                 rel="noopener noreferrer"
                 class="project-btn"
                 href="{{ project.html_url }}"
-                ><i class="fab fa-github"></i>View on Github</a
+                >{% include 'assets/svgs/brands/github.svg' %}View on Github</a
               >
               </div>
             </div>
@@ -253,10 +249,10 @@
             <div class="timeline-button">
               <span class="more">
                 <p>Show More</p>
-                <img src="./assets/img/arrow_down.svg" alt="Scroll down" />
+                {% include '/assets/img/arrow_down.svg' %}
               </span>
               <span class="less">
-                <img src="./assets/img/arrow_down.svg" alt="Scroll down" />
+                {% include '/assets/img/arrow_down.svg' %}
                 <p>Show Less</p>
               </span>
             </div>
@@ -265,7 +261,7 @@
 
         <section class="section contact-section" id="contact-section">
           <h1 class="section-title">Contact me</h1>
-          <form id="contact-form">
+          <form id="contact-form" method="post" action="https://forms.un-static.com/forms/10060dcbd6610129184dde293c6ae48470b2e902">
             <div id="msg"></div>
             <div class="form-group">
               <label for="from_name">Enter Name</label>
@@ -313,9 +309,9 @@
         <footer class="footer">
           <div class="footer-center">
             <p>
-              Made by
-              <a href="https://github.com/dev-caspertheghost">CasperTheGhost</a>
-              in 2020 with ❤️
+              A fork of
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/dev-caspertheghost">CasperTheGhost's</a> <a target="_blank" rel="noopener noreferrer" href="https://caspertheghost.me">website</a>
+              by <a href="https://haideralipunjabi.com" target="_blank" rel="noopener noreferrer">Haider Ali Punjabi</a> with ❤️
             </p>
           </div>
           <div class="footer-links">

@@ -7,17 +7,17 @@
     {
       "url": "https://github.com/haideralipunjabi",
       "name": "Github",
-      "icon": "fab fa-github"
+      "icon": "assets/svgs/brands/github.svg"
     },
     {
       "url": "https://instagram.com/haideralipunjabi",
       "name": "Instagram",
-      "icon": "fab fa-instagram"
+      "icon": "assets/svgs/brands/instagram.svg"
     },
     {
       "url": "https://twitter.com/haideralipunjabi",
       "name": "Twitter",
-      "icon": "fab fa-twitter"
+      "icon": "assets/svgs/brands/twitter.svg"
     }
   ],
   "background_color_dark": "#242930",

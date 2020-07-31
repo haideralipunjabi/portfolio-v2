@@ -33,9 +33,9 @@ fields:
         required: false
       label: Link
     - name: icon
-      type: text
+      type: file
       config:
-        required: false
+        maxSize: 64
       label: Icon
     config:
       min: 
