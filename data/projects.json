@@ -54,8 +54,22 @@
       ]
     },
     {
+      "name": "DBS Scouter Font",
+      "description": "<p>Scouter Language Font as seen in <a href=\"https://en.wikipedia.org/wiki/Dragon_Ball_Super:_Broly\">Dragon Ball Super: Broly</a></p>",
+      "buttons": [
+        {
+          "name": "Github",
+          "link": "https://github.com/haideralipunjabi/DBSScouterFont",
+          "icon": "/assets/svgs/brands/github.svg"
+        }
+      ],
+      "tags": [
+
+      ]
+    },
+    {
       "name": "Harry Potter Fanfiction Recommender",
-      "description": "<p>A website showing story and author recommendation based on what is being recommended over <a href=\"https://www.reddit.com/r/HPfanfiction\">r/HPFanfiction</a></p>",
+      "description": "<p>Recommendation based on what is being recommended over <a href=\"https://www.reddit.com/r/HPfanfiction\">r/HPFanfiction</a></p>",
       "buttons": [
         {
           "name": "Website",
@@ -65,20 +79,6 @@
       ],
       "tags": [
         "assets/svgs/solid/globe-asia.svg"
-      ]
-    },
-    {
-      "name": "Custom Icons for Atom",
-      "description": "A project for custom Atom Icons.",
-      "buttons": [
-        {
-          "name": "Github",
-          "link": "https://github.com/HackeSta/atom-icons",
-          "icon": "assets/svgs/brands/github.svg"
-        }
-      ],
-      "tags": [
-        "assets/svgs/solid/code.svg"
       ]
     },
     {
