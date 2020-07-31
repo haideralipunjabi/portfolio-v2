@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/timeline.css" />
     <link rel="manifest" href="./assets/manifest.json" />
     {% include 'og.html' %}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   </head>
 
@@ -227,8 +228,7 @@
               {% for post in blog_posts %}
               <div class="blog">
                 <div class="blog-image">
-                  <img src="{{ post.data.image }}" alt="{{ post.data.name }}">
-
+                  <img loading="lazy" src="{{ post.data.image }}" alt="{{ post.data.name }}">
                 </div>
                 <div class="blog-title">
                   <a href="{{ post.data.permalink }}" target="_blank" rel="noopener noreferrer"><h2>{{ post.data.name }}</h2></a>
@@ -270,7 +270,7 @@
 
         <section class="section contact-section" id="contact-section">
           <h1 class="section-title">Contact me</h1>
-          <form id="contact-form" method="post" action="https://forms.un-static.com/forms/10060dcbd6610129184dde293c6ae48470b2e902">
+          <form data-netlify-recaptcha="true" id="contact-form" method="post" action="https://forms.un-static.com/forms/10060dcbd6610129184dde293c6ae48470b2e902">
             <div id="msg"></div>
             <div class="form-group">
               <label for="from_name">Enter Name</label>
@@ -307,9 +307,10 @@
               ></textarea>
             </div>
             <div class="form-group">
-              <a class="form-other" href="mailto:me@haideralipunjabi.com"
-                >send me an email directly</a
-              >
+              <div class="g-recaptcha" data-sitekey="6LdBdbgZAAAAAG4Gm1OWqwu4gnpe121UoUeqq4Hq"></div>
+            </div>
+            <div class="form-group">
+              <a href="mailto:me@haideralipunjabi.com" target="_blank" rel="noopener noreferrer">Mail me!</a>
               <button class="submit-btn" type="submit">Submit</button>
             </div>
           </form>
