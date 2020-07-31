@@ -1,6 +1,6 @@
 from cairosvg import svg2png
 from PIL import Image
-
+import os
 ICONS = [32,70,72,96,128,144,150,152,180,192,196,310,384,512]
 
 def gen_icons():

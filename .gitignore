@@ -7,3 +7,4 @@ assets/manifest.json
 /og.html
 *.xcf
 /assets/img/og.svg
+/assets/img/blogs/*

@@ -221,13 +221,22 @@
             
           </div>
         </section>
-        <section class="section blog-posts" id="blogs-section">
+        <section class="section projects blog-posts" id="blogs-section">
             <h1 class="section-title">Recent Blogs</h1>
-            <ul>
+            <div class="blogs-container">
               {% for post in blog_posts %}
-                <li><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a></li>
+              <div class="blog">
+                <div class="blog-image">
+                  <img src="{{ post.data.image }}" alt="{{ post.data.name }}">
+
+                </div>
+                <div class="blog-title">
+                  <a href="{{ post.data.permalink }}" target="_blank" rel="noopener noreferrer"><h2>{{ post.data.name }}</h2></a>
+                </div>
+              </div>
               {% endfor %}
-            </ul>
+              
+            </div>
         </section>
 
         <section class="section timeline-section" id="timeline-section">

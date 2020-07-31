@@ -310,7 +310,7 @@ a {
   margin-top: 2rem;
 }
 
-.projects-container {
+.projects-container, .blogs-container {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -514,19 +514,28 @@ a {
   color: #dddddd;
 }
 
-.section.blog-posts a {
+.blog a {
   color: white;
-  font-size: 2rem;
 }
-
-.section.blog-posts li {
-  margin-top: 1rem;
+.blog {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--bg-dark);
 }
-
-.section.blog-posts ul {
-  list-style: none;
+.blog .blog-image {
+  width: 100%;
+  text-align: center;
 }
-
+.blog .blog-image img {
+  width: 100%;
+}
+.blog .blog-title {
+  padding: 20px;
+}
+.blog .blog-title a{
+  text-decoration: none;
+}
 .statistics-container {
   display: flex;
   color: white;
@@ -651,7 +660,7 @@ a {
   .skills-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  .projects-container {
+  .projects-container, .blogs-container {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer {
@@ -672,7 +681,7 @@ a {
   .skills-container {
     grid-template-columns: repeat(4, 1fr);
   }
-  .projects-container {
+  .projects-container, .blogs-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -690,7 +699,7 @@ a {
   .skills-container {
     grid-template-columns: repeat(6, 1fr);
   }
-  .projects-container {
+  .projects-container, .blogs-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -699,7 +708,7 @@ a {
   .skills-container {
     grid-template-columns: repeat(8, 1fr);
   }
-  .projects-container {
+  .projects-container, .blogs-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -1,24 +1,34 @@
 import jinja2
-
-
 import json
 import os
 from os import listdir
 from os.path import isfile, join, splitext
 import requests
-import feedparser
 from functools import reduce
+import wget
+from PIL import Image
+
 templateLoader = jinja2.FileSystemLoader(searchpath="./")
 templateEnv = jinja2.Environment(loader=templateLoader,trim_blocks=True)
 
-BLOG_RSS_URL = "https://blog.haideralipunjabi.com/index.xml"
+BLOG_API_URL = "https://blog.haideralipunjabi.com/index.json"
 GITHUB_API_URL = "https://api.github.com/users/%s/repos?per_page=100&page=%s"
 FOSS_CONTRIBUTIONS_DATA = "data/foss-contributions.json"
-
+BLOG_IMAGE_SIZE = 512,512
 ICONS = [32,70,72,96,128,144,150,152,180,192,196,310,384,512]
 def get_blog_posts(num):
-    feed = feedparser.parse(BLOG_RSS_URL)
-    return {"blog_posts":feed['entries'][:num]}
+    data = requests.get(BLOG_API_URL).json()
+    os.system("rm -rf assets/img/blogs")
+    os.system("mkdir assets/img/blogs")
+    for post in data[:num]:
+        filepath = f'assets/img/blogs/{post["data"]["image"].split("/")[-1]}'
+        wget.download(post["data"]["image"],out=filepath)
+        post["data"]["image"] = filepath
+        im = Image.open(filepath)
+        im.thumbnail(BLOG_IMAGE_SIZE,Image.ANTIALIAS)
+        im.save(filepath)
+        
+    return {"blog_posts":data[:num]}
 
 def get_github_data(username):
     repos = []
@@ -55,7 +65,7 @@ templates = [
     {
         "input": "index.html",
         "data_files": ["backpack.json","settings.json","projects.json","timeline.json"],
-        "data":[get_blog_posts(5),get_github_data("haideralipunjabi"),get_foss_contributions()],
+        "data":[get_blog_posts(4),get_github_data("haideralipunjabi"),get_foss_contributions()],
         "output": "index.html"
     },
     {
