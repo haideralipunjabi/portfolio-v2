@@ -49,6 +49,10 @@ fields:
   config:
     required: false
   label: Type
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
 - name: og_image
   type: file
   config:
