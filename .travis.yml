@@ -7,7 +7,7 @@ install:
   - nvm install v12.16.1
   - npm install
   - npm i -g purgecss
-  - npm i -g postcss
+  - npm i -g postcss-cli
   - npm i cssnano
 # command to run tests
 script: python .travis/build.py
