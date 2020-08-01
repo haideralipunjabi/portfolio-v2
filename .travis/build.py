@@ -120,9 +120,13 @@ def gen_sitemap():
     sitemap_file.write('</urlset>')
     sitemap_file.close()
 
-
+def gen_redirects():
+    redirects_file = open("_redirects","a")
+    redirects_file.write("\n%s %s 200"%("/contact/*", f"https://api.telegram.org/bot{os.getenv('TELEGRAM_API')}/sendMessage?chat_id={os.getenv('TELEGRAM_CHAT_ID')}&text=:splat"))
+    redirects_file.close()
 
 
 gen_og()
 gen_templates()
+gen_redirects()
 # gen_sitemap()

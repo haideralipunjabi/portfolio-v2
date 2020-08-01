@@ -59,3 +59,25 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Stash the event so it can be triggered later.
 
 });
+
+document.getElementById("contact-form").addEventListener('submit',e=>{
+  e.preventDefault();
+  let name = document.getElementById("from_name").value;
+  let email = document.getElementById("email").value;
+  let msg = document.getElementById("message").value;
+  const message = document.getElementById("msg");
+  let data = encodeURI(`Name: ${name}\nEmail: ${email}\nMessage: ${msg}`)
+  
+  fetch(`/contact/${data}`, {
+    'method': 'GET'
+  }).then(r=>{
+    if(r.status === 200){
+      message.style.display = "block";
+        message.textContent = "Successfully send message!";
+
+        setTimeout(() => {
+          message.style.display = "none";
+        }, 10000);
+    }
+  })
+})
