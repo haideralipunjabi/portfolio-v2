@@ -3,6 +3,7 @@
 .netlify
 /index.html
 assets/css/colors.css
+assets/css/bundle.min.css
 assets/manifest.json
 /og.html
 *.xcf
