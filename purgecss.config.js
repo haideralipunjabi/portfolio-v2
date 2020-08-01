@@ -3,5 +3,5 @@ module.exports = {
         '**/*.js',
         '**/*.html',
     ],
-    css: ['**/*.css']
+    css: ['assets/css/*.css']
   }
