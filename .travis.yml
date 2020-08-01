@@ -13,7 +13,7 @@ install:
 script: python .travis/build.py
 before_deploy: 
   - purgecss -c ./purgecss.config.js --output assets/css/
-  - cat ./assets/css/*.css | postcss --no-map > .assets/css/bundle.min.css
+  - cat ./assets/css/*.css | postcss --no-map > ./assets/css/bundle.min.css
 cache:
   directories:
     - node_modules
