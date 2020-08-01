@@ -129,4 +129,4 @@ def gen_redirects():
 gen_og()
 gen_templates()
 gen_redirects()
-# gen_sitemap()
+gen_sitemap()
