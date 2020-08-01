@@ -103,22 +103,22 @@ def gen_templates():
 
 
 
-def gen_sitemap():
-    sitemap_file = open("sitemap.xml","w")
-    sitemap_file.write('<?xml version="1.0" encoding="UTF-8"?>')
-    sitemap_file.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
-    for f in onlyfiles:
-        if EXCLUDE_FILES.__contains__(f):
-            continue
-        sitemap_file.write(
-            '''
-            <url>
-                <loc>%s</loc>
-            </url>
-            '''
-        %("https://haideralipunjabi.com/"+f.replace("index","").replace(".html","")))
-    sitemap_file.write('</urlset>')
-    sitemap_file.close()
+# def gen_sitemap():
+#     sitemap_file = open("sitemap.xml","w")
+#     sitemap_file.write('<?xml version="1.0" encoding="UTF-8"?>')
+#     sitemap_file.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+#     for f in onlyfiles:
+#         if EXCLUDE_FILES.__contains__(f):
+#             continue
+#         sitemap_file.write(
+#             '''
+#             <url>
+#                 <loc>%s</loc>
+#             </url>
+#             '''
+#         %("https://haideralipunjabi.com/"+f.replace("index","").replace(".html","")))
+#     sitemap_file.write('</urlset>')
+#     sitemap_file.close()
 
 def gen_redirects():
     redirects_file = open("_redirects","a")
@@ -129,4 +129,4 @@ def gen_redirects():
 gen_og()
 gen_templates()
 gen_redirects()
-gen_sitemap()
+# gen_sitemap()
