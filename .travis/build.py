@@ -15,7 +15,6 @@ BLOG_API_URL = "https://blog.haideralipunjabi.com/index.json"
 GITHUB_API_URL = "https://api.github.com/users/%s/repos?per_page=100&page=%s"
 FOSS_CONTRIBUTIONS_DATA = "data/foss-contributions.json"
 BLOG_IMAGE_SIZE = 512,512
-ICONS = [32,70,72,96,128,144,150,152,180,192,196,310,384,512]
 def get_blog_posts(num):
     data = requests.get(BLOG_API_URL).json()
     os.system("rm -rf assets/img/blogs")
@@ -77,18 +76,13 @@ templates = [
     }
 ]
 
-
-
-
 def gen_og():
     settings = json.load(open("data/settings.json","r"))
     template = templateEnv.get_template("templates/manifest")
-    print(template.render(icons=ICONS,**settings),file=open("assets/manifest.json","w"))
+    print(template.render(**settings),file=open("assets/manifest.json","w"))
     template = templateEnv.get_template("templates/og.html")
-    print(template.render(icons=ICONS,**settings),file=open("og.html","w"))
+    print(template.render(**settings),file=open("og.html","w"))
     
-
-
 def gen_templates():
     for template_data in templates:
         TEMPLATE_FILE = "templates/"+template_data["input"]
@@ -102,24 +96,6 @@ def gen_templates():
         print(template.render(**data),file=open(template_data["output"],"w"))
 
 
-
-# def gen_sitemap():
-#     sitemap_file = open("sitemap.xml","w")
-#     sitemap_file.write('<?xml version="1.0" encoding="UTF-8"?>')
-#     sitemap_file.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
-#     for f in onlyfiles:
-#         if EXCLUDE_FILES.__contains__(f):
-#             continue
-#         sitemap_file.write(
-#             '''
-#             <url>
-#                 <loc>%s</loc>
-#             </url>
-#             '''
-#         %("https://haideralipunjabi.com/"+f.replace("index","").replace(".html","")))
-#     sitemap_file.write('</urlset>')
-#     sitemap_file.close()
-
 def gen_redirects():
     redirects_file = open("_redirects","a")
     redirects_file.write("\n%s %s 200"%("/contact/*", f"https://api.telegram.org/bot{os.getenv('TELEGRAM_API')}/sendMessage?chat_id={os.getenv('TELEGRAM_CHAT_ID')}&text=:splat"))
@@ -129,4 +105,3 @@ def gen_redirects():
 gen_og()
 gen_templates()
 gen_redirects()
-# gen_sitemap()
