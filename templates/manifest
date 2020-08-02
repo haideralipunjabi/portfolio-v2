@@ -8,11 +8,15 @@
     "theme_color": "{{ primary_color }}",
     "name": "{{ title }}",
     "icons": [
-        {% for icon in icons%}
         {
-          "src": "/assets/favicons/icon-{{ icon }}x{{ icon }}.png",
-          "type": "image/png", "sizes": "{{ icon }}x{{ icon }}"
-        }{{ "," if not loop.last }}
-        {% endfor %}
+            "src": "/assets/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
     ]
 }
