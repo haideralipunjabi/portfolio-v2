@@ -51,7 +51,7 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 
 a {
-  color: --var(--primary);
+  color: var(--primary);
 }
 
 .section-title {
