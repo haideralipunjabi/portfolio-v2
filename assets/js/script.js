@@ -12,7 +12,7 @@ errorSpan.classList.add('error')
 
 window.onscroll = function shiftNav() {
   if (window.pageYOffset > sticky) {
-    navbar.style.boxShadow = "0 2px 2px rgba(35,37,53,0.8)";
+    navbar.style.boxShadow = "0 2px 2px rgba(36,41,48,0.8)";
     navbar.style.height = "60px";
   } else {
     navbar.style.boxShadow = "none";
