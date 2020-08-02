@@ -3,6 +3,8 @@
 Fork of [Portfoliov2 by CasperTheGhost](https://github.com/Dev-CasperTheGhost/portfolio-v2).  
 Repository containing code for [my portfolio website](https://haideralipunjabi.com).
 
+[Blog: Redesigning My Website - Automation, Custom SSG & Optimisations](https://blog.haideralipunjabi.com/posts/redesigning-my-website-automation-custom-ssg-optimisations/)
+
 ## How it Works  
 
 1. [Forestry CMS](https://forestry.io/) is used to modify the `json` files in `data` folder
