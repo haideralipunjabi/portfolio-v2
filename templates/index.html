@@ -225,7 +225,11 @@
               {% for post in blog_posts %}
               <div class="blog">
                 <div class="blog-image">
-                  <img loading="lazy" src="{{ post.data.image }}" alt="{{ post.data.name }}">
+                  <picutre>
+                    <source srcset="{{ post.data.image[0] }}" type="image/webp">
+                    <source srcset="{{ post.data.image[1] }}" type="image/jpeg">
+                    <img loading="lazy" src="{{ post.data.image[1] }}" alt="{{ post.data.name }}">
+                  </picutre>
                 </div>
                 <div class="blog-title">
                   <a href="{{ post.data.permalink }}" target="_blank" rel="noopener noreferrer"><h2>{{ post.data.name }}</h2></a>

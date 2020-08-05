@@ -21,12 +21,14 @@ def get_blog_posts(num):
     os.system("mkdir assets/img/blogs")
     for post in data[:num]:
         filein = f'assets/img/blogs/{post["data"]["image"].split("/")[-1]}'
-        fileout = filein.rsplit(".",1)[0] + ".webp"
+        fileout1 = filein.rsplit(".",1)[0] + ".webp"
+        fileout2 = filein.rsplit(".",1)[0] + ".jpg"
         wget.download(post["data"]["image"],out=filein)
-        post["data"]["image"] = fileout
+        post["data"]["image"] = [fileout1,fileout2]
         im = Image.open(filein)
         im.thumbnail(BLOG_IMAGE_SIZE,Image.ANTIALIAS)
-        im.save(fileout)
+        im.save(fileout1)
+        im.save(fileout2)
         
     return {"blog_posts":data[:num]}
 
