@@ -33,16 +33,6 @@
       ]
     },
     {
-      "link": "https://www.inversejournal.com/2020/04/04/covid-19-kashmir-tracker-when-young-it-professionals-harness-the-power-of-open-source-to-help-make-a-difference/",
-      "title": "",
-      "description": "",
-      "image_src": "",
-      "site": "",
-      "images": [
-
-      ]
-    },
-    {
       "link": "https://www.youtube.com/watch?v=YQep9lUJPxk",
       "title": "Kashmiri student develops COVID-19 tracker",
       "description": "A student in Kashmir, Haider Ali Punjabi developed a web page on COVID-19 for the state to spread the updated information on coronavirus pandemic. It provide...",
@@ -51,6 +41,16 @@
       "images": [
         "assets/img/press/0.webp",
         "assets/img/press/0.jpg"
+      ]
+    },
+    {
+      "link": "https://www.inversejournal.com/2020/04/04/covid-19-kashmir-tracker-when-young-it-professionals-harness-the-power-of-open-source-to-help-make-a-difference/",
+      "title": "",
+      "description": "",
+      "image_src": "",
+      "site": "",
+      "images": [
+
       ]
     }
   ]
