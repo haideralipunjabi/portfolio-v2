@@ -1,0 +1,26 @@
+---
+label: Press
+hide_body: true
+fields:
+- type: field_group_list
+  name: press
+  label: press
+  fields:
+  - type: text
+    name: link
+    label: link
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - type: file
+    name: image_src
+    label: image_src
+  - type: text
+    name: site
+    label: site
+  - type: image_gallery
+    name: images
+    label: images
