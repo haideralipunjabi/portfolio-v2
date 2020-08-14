@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: data/press.json
+  label: Press
+  match: "**/*"
+- type: document
   path: data/foss-contributions.json
   label: FOSS Contributions
 - type: document
