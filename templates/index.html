@@ -1,344 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ name }} - Portfolio</title>
-    <link rel="stylesheet" href="assets/css/bundle.min.css">
-    <link rel="manifest" href="./assets/manifest.json">
-    {% include 'og.html' %}
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ name }} - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/bundle.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/colors.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="stylesheet" href="assets/css/style.css"> -->
+  <link rel="manifest" href="./assets/manifest.json">
+  {% include 'og.html' %}
 
-  <body>
-    <aside class="menu" id="menu">
-      <button aria-label="close-menu" class="close-menu">
-        {% include '/assets/img/close.svg' %}
-      </button>
-      <div class="menu-links">
-        <a href="#skills-section" class="menu-link">Skills</a>
-        <a href="#projects-section" class="menu-link">Projects</a>
-        <a href="#blogs-section" class="menu-link">Blogs</a>
-        <a href="#timeline-section" class="menu-link">Timeline</a>
-        <a href="#contact-section" class="menu-link">Contact</a>
-      </div>
-    </aside>
+</head>
 
-    <div class="container">
-      <div>
-        <nav id="nav-bar" class="nav-bar">
-          <div class="nav-content">
-            <div>
-            </div>
-            <div class="nav-links">
-              <button aria-label="open-menu" class="open-menu">
-                {% include '/assets/img/menu.svg' %}
-              </button>
-              <a
-                data-page="skills-section"
-                href="#skills-section"
-                class="nav-link link-line"
-                >Skills</a
-              >
-              <a
-                data-page="projects-section"
-                href="#projects-section"
-                class="nav-link link-line"
-                >Projects</a
-              >
-              <a
-                data-page="blogs-section"
-                href="#blogs-section"
-                class="nav-link link-line"
-                >Blogs</a
-              >
-              <a
-                data-page="timeline-section"
-                href="#timeline-section"
-                class="nav-link link-line"
-                >Timeline</a
-              >
-              <a
-                data-page="contact-section"
-                href="#contact-section"
-                class="nav-link link-line"
-                >Contact</a
-              >
-            </div>
+<body>
+  <aside class="menu" id="menu">
+    <button aria-label="close-menu" class="close-menu">
+      {% include '/assets/img/close.svg' %}
+    </button>
+    <div class="menu-links">
+      <a href="#skills-section" class="menu-link">Skills</a>
+      <a href="#projects-section" class="menu-link">Projects</a>
+      <a href="#blogs-section" class="menu-link">Blogs</a>
+      <a href="#timeline-section" class="menu-link">Timeline</a>
+      <a href="#contact-section" class="menu-link">Contact</a>
+    </div>
+  </aside>
+
+  <div class="container">
+    <div>
+      <nav id="nav-bar" class="nav-bar">
+        <div class="nav-content">
+          <div>
           </div>
-        </nav>
-
-        <main class="main">
-          <div class="fade-down">
-            <p>{{ name }}</p>
-            <h1>
-              {{ subtitle }}
-            </h1>
-            <div class="btn-container">
-              <a class="btn" href="#projects-section">Projects</a>
-              <a class="btn" href="#contact-section">Contact</a>
-            </div>
+          <div class="nav-links">
+            <button aria-label="open-menu" class="open-menu">
+              {% include '/assets/img/menu.svg' %}
+            </button>
+            <a data-page="skills-section" href="#skills-section" class="nav-link link-line">Skills</a>
+            <a data-page="projects-section" href="#projects-section" class="nav-link link-line">Projects</a>
+            <a data-page="blogs-section" href="#blogs-section" class="nav-link link-line">Blogs</a>
+            <a data-page="timeline-section" href="#timeline-section" class="nav-link link-line">Timeline</a>
+            <a data-page="contact-section" href="#contact-section" class="nav-link link-line">Contact</a>
           </div>
-          <a href="#skills-section" class="scroll-down">
-            <p>Scroll Down</p>
-            {% include '/assets/img/arrow_down.svg' %}
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="fade-down">
+          <p>{{ name }}</p>
+          <h1>
+            {{ subtitle }}
+          </h1>
+          <div class="btn-container">
+            <a class="btn" href="#projects-section">Projects</a>
+            <a class="btn" href="#contact-section">Contact</a>
+          </div>
+        </div>
+        <a href="#skills-section" class="scroll-down">
+          <p>Scroll Down</p>
+          {% include '/assets/img/arrow_down.svg' %}
+        </a>
+
+        <div class="socials">
+          {% for social in social_media %}
+          <a target="_blank" rel="noopener noreferrer" href="{{ social.url }}" aria-label="{{ social.name }}">
+            {% include social.icon  %}
           </a>
+          {% endfor %}
+        </div>
+      </main>
 
-          <div class="socials">
-            {% for social in social_media %}
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="{{ social.url }}"
-                aria-label="{{ social.name }}"
-              >
-                {% include social.icon  %}
-              </a>
-            {% endfor %}
+      <section class="skills section" id="skills-section">
+        <h1 class="section-title">My Backpack</h1>
+        <div class="skills-container">
+          {% for skill in backpack %}
+          <div class="skill">
+            {% include skill.icon %}
+            <p>{{ skill.name }}</p>
           </div>
-        </main>
+          {% endfor %}
+        </div>
+      </section>
 
-        <section class="skills section" id="skills-section">
-          <h1 class="section-title">My Backpack</h1>
-          <div class="skills-container">
-            {% for skill in backpack %}
-            <div class="skill">
-              {% include skill.icon %}
-              <p>{{ skill.name }}</p>
-            </div>
-            {% endfor %}
-          </div>
-        </section>
-
-        <section class="section projects" id="projects-section">
-          <h1 class="section-title">Projects</h1>
-          <div class="projects-container">
-            {% for project in projects %}
-            <div class="project">
-              <div class="project-tags">
-                {% for tag in project.tags %}
-                {% include tag %}
-                {% endfor %}
-              </div>
-              <h2>{{ project.name }}</h2>
-              <p>
-                {{ project.description }}
-              </p>
-              <div class="btn-container">
-                {% for button in project.buttons %}
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-btn"
-                href="{{ button.link }}"
-                >{% include button.icon %}{{ button.name }}</a
-              >
-                {% endfor %}
-              </div>
-            </div>
-            {% endfor %}
-            
-          </div>
-        </section>
-        <section class="section foss" id="section-foss">
-          <h1 class="section-title">Open Source</h1>
-          <div class="statistics-container">
-            <div>
-              <h1>{{ github.repo_count  }}</h1>
-              <p>Repositories</p>
-            </div>
-            <div>
-              <h1>{{ github.stargazers }}</h1>
-              <p>Stargazers</p>
-            </div>
-            <div>
-              <h1>{{ github.forks }}</h1>
-              <p>Forks</p>
-            </div>
-          </div>
-        </section>
-        <section class="section projects" id="foss-projects-section">
-          <h1 class="section-title">My FOSS Projects</h1>
-          <div class="projects-container">
-            {% for project in github.most_popular %}
-            <div class="project">
-              
-              <h2>{{ project.name }}</h2>
-              <p>
-                {{ project.description }}
-              </p>
-              <br>
-              <p>
-                {% include 'assets/svgs/regular/star.svg' %} {{ project.stargazers_count }}
-                {% include 'assets/svgs/solid/code-branch.svg' %} {{ project.forks }}
-              </p>
-              <div class="btn-container">
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-btn"
-                href="{{ project.html_url }}"
-                >{% include 'assets/svgs/brands/github.svg' %}View on Github</a
-              >
-              </div>
-            </div>
-            {% endfor %}
-            
-          </div>
-        </section>
-        <section class="section projects" id="foss-contributions-section">
-          <h1 class="section-title">Projects I Contribute to</h1>
-          <div class="projects-container">
-            {% for project in contributions %}
-            <div class="project">
-              
-              <h2>{{ project.name }}</h2>
-              <p>
-                {% if project.description|length > 50 %}
-                  {{ project.description[:50] }}...
-                {% else %}
-                  {{ project.description }}
-                {% endif %}
-              </p>
-              <br>
-              <p>
-                {% include 'assets/svgs/regular/star.svg' %} {{ project.stargazers_count }}
-                {% include 'assets/svgs/solid/code-branch.svg' %} {{ project.forks }}
-              </p>
-              <div class="btn-container">
-                <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-btn"
-                href="{{ project.html_url }}"
-                >{% include 'assets/svgs/brands/github.svg' %}View on Github</a
-              >
-              </div>
-            </div>
-            {% endfor %}
-            
-          </div>
-        </section>
-        <section class="section projects blog-posts" id="blogs-section">
-            <h1 class="section-title">Recent Blogs</h1>
-            <div class="blogs-container">
-              {% for post in blog_posts %}
-              <div class="blog">
-                <div class="blog-image">
-                  <picutre>
-                    <source srcset="{{ post.data.image[0] }}" type="image/webp">
-                    <source srcset="{{ post.data.image[1] }}" type="image/jpeg">
-                    <img loading="lazy" src="{{ post.data.image[1] }}" alt="{{ post.data.name }}">
-                  </picutre>
-                </div>
-                <div class="blog-title">
-                  <a href="{{ post.data.permalink }}" target="_blank" rel="noopener noreferrer"><h2>{{ post.data.name }}</h2></a>
-                </div>
-              </div>
+      <section class="section projects" id="projects-section">
+        <h1 class="section-title">Projects</h1>
+        <div class="projects-container">
+          {% for project in projects %}
+          <div class="project">
+            <div class="project-tags">
+              {% for tag in project.tags %}
+              {% include tag %}
               {% endfor %}
-              
             </div>
-        </section>
-
-        <section class="section timeline-section" id="timeline-section">
-          <h1 class="section-title">Experience Timeline</h1>
-          <div class="timeline timeline-collapsed">
-            {% for item in timeline %}
-              
-
-            <div class="timeline-item {% if loop.index0%2 == 0 %}left{% else %}right{% endif %}">
-              <div class="timeline-item-body">
-                <div class="timeline-item-header">
-                  <p>{{ item.time }}</p>
-                  <p class="title">{{ item.title }}</p>
-                </div>
-                {{ item.description }}
-              </div>
-            </div>
-            {% endfor %}
-            <div class="timeline-button">
-              <span class="more">
-                <p>Show More</p>
-                {% include '/assets/img/arrow_down.svg' %}
-              </span>
-              <span class="less">
-                {% include '/assets/img/arrow_down.svg' %}
-                <p>Show Less</p>
-              </span>
-            </div>
-          </div>
-        </section>
-
-        <section class="section contact-section" id="contact-section">
-          <h1 class="section-title">Contact me</h1>
-          <form data-netlify-recaptcha="true" id="contact-form">
-            <div id="msg"></div>
-            <div class="form-group">
-              <label for="from_name">Enter Name</label>
-              <input
-                class="form-input"
-                type="text"
-                name="from_name"
-                id="from_name"
-                placeholder="Name.."
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Enter Email</label>
-              <input
-                class="form-input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email.."
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Enter Message</label>
-              <textarea
-                class="form-input"
-                rows="5"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="Message.."
-                required
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <a href="mailto:me@haideralipunjabi.com" target="_blank" rel="noopener noreferrer">Mail me!</a>
-              <button class="submit-btn" type="submit">Submit</button>
-            </div>
-          </form>
-        </section>
-
-        <footer class="footer">
-          <div class="footer-center">
+            <h2>{{ project.name }}</h2>
             <p>
-              A fork of
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/dev-caspertheghost">CasperTheGhost's</a> <a target="_blank" rel="noopener noreferrer" href="https://caspertheghost.me">website</a>
-              by <a href="https://haideralipunjabi.com" target="_blank" rel="noopener noreferrer">Haider Ali Punjabi</a>
+              {{ project.description }}
             </p>
+            <div class="btn-container">
+              {% for button in project.buttons %}
+              <a target="_blank" rel="noopener noreferrer" class="project-btn"
+                href="{{ button.link }}">{% include button.icon %}{{ button.name }}</a>
+              {% endfor %}
+            </div>
           </div>
-          <div class="footer-links">
-            {% for social in social_media %}
-            <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="{{ social.url }}"
-            class="footer-link link-line"
-          >
-            {{ social.name }}</a
-          >
-            {% endfor %}
-            
-           
+          {% endfor %}
+
+        </div>
+      </section>
+      <section class="section foss" id="section-foss">
+        <h1 class="section-title">Open Source</h1>
+        <div class="statistics-container">
+          <div>
+            <h1>{{ github.repo_count  }}</h1>
+            <p>Repositories</p>
           </div>
-        </footer>
+          <div>
+            <h1>{{ github.stargazers }}</h1>
+            <p>Stargazers</p>
+          </div>
+          <div>
+            <h1>{{ github.forks }}</h1>
+            <p>Forks</p>
+          </div>
+        </div>
+      </section>
+      <section class="section projects" id="foss-projects-section">
+        <h1 class="section-title">My FOSS Projects</h1>
+        <div class="projects-container">
+          {% for project in github.most_popular %}
+          <div class="project">
+
+            <h2>{{ project.name }}</h2>
+            <p>
+              {{ project.description }}
+            </p>
+            <br>
+            <p>
+              {% include 'assets/svgs/regular/star.svg' %} {{ project.stargazers_count }}
+              {% include 'assets/svgs/solid/code-branch.svg' %} {{ project.forks }}
+            </p>
+            <div class="btn-container">
+              <a target="_blank" rel="noopener noreferrer" class="project-btn"
+                href="{{ project.html_url }}">{% include 'assets/svgs/brands/github.svg' %}View on Github</a>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </section>
+      <section class="section projects" id="foss-contributions-section">
+        <h1 class="section-title">Projects I Contribute to</h1>
+        <div class="projects-container">
+          {% for project in contributions %}
+          <div class="project">
+
+            <h2>{{ project.name }}</h2>
+            <p>
+              {% if project.description|length > 50 %}
+              {{ project.description[:50] }}...
+              {% else %}
+              {{ project.description }}
+              {% endif %}
+            </p>
+            <br>
+            <p>
+              {% include 'assets/svgs/regular/star.svg' %} {{ project.stargazers_count }}
+              {% include 'assets/svgs/solid/code-branch.svg' %} {{ project.forks }}
+            </p>
+            <div class="btn-container">
+              <a target="_blank" rel="noopener noreferrer" class="project-btn"
+                href="{{ project.html_url }}">{% include 'assets/svgs/brands/github.svg' %}View on Github</a>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </section>
+      <section class="section projects blog-posts" id="blogs-section">
+        <h1 class="section-title">Recent Blogs</h1>
+        <div class="blogs-container">
+          {% for post in blog_posts %}
+          <div class="blog">
+            <div class="blog-image">
+              <picutre>
+                <source srcset="{{ post.data.image[0] }}" type="image/webp">
+                <source srcset="{{ post.data.image[1] }}" type="image/jpeg">
+                <img loading="lazy" src="{{ post.data.image[1] }}" alt="{{ post.data.name }}">
+              </picutre>
+            </div>
+            <div class="blog-title">
+              <a href="{{ post.data.permalink }}" target="_blank" rel="noopener noreferrer">
+                <h2>{{ post.data.name }}</h2>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+         <a class="btn" href="https://blog.haideralipunjabi.com" target="_blank" rel="noopener noreferrer">View More</a>
+        </div>
+      </section>
+      <section class="section projects blog-posts" id="press-section">
+        <h1 class="section-title">In Press</h1>
+        <div class="press-container">
+          {% for post in press %}
+          {% if post.images|length > 0 %}
+          <div class="press-item">
+            <div class="press-image">
+              <h3 class="press-site">{{ post.site }}</h3>
+              <picutre>
+                <source srcset="{{ post.images[0] }}" type="image/webp">
+                <source srcset="{{ post.images[1] }}" type="image/jpeg">
+                <img loading="lazy" src="{{ post.images[1] }}" alt="{{ post.title }}">
+              </picutre>
+            </div>
+            <div class="press-title">
+              <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">
+                <h2>{{ post.title }}</h2>
+              </a>
+            </div>
+            <div class="press-description">
+              <p>
+                {{ post.description }}
+              </p>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+          <button class="btn" onclick="javascript:openModal('#modal-press')">View More</a>
+        </div>
+      </section>
+      <section class="section timeline-section" id="timeline-section">
+        <h1 class="section-title">Experience Timeline</h1>
+        <div class="timeline timeline-collapsed">
+          {% for item in timeline %}
+
+
+          <div class="timeline-item {% if loop.index0%2 == 0 %}left{% else %}right{% endif %}">
+            <div class="timeline-item-body">
+              <div class="timeline-item-header">
+                <p>{{ item.time }}</p>
+                <p class="title">{{ item.title }}</p>
+              </div>
+              {{ item.description }}
+            </div>
+          </div>
+          {% endfor %}
+          <div class="timeline-button">
+            <span class="more">
+              <p>Show More</p>
+              {% include '/assets/img/arrow_down.svg' %}
+            </span>
+            <span class="less">
+              {% include '/assets/img/arrow_down.svg' %}
+              <p>Show Less</p>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact-section">
+        <h1 class="section-title">Contact me</h1>
+        <form data-netlify-recaptcha="true" id="contact-form">
+          <div id="msg"></div>
+          <div class="form-group">
+            <label for="from_name">Enter Name</label>
+            <input class="form-input" type="text" name="from_name" id="from_name" placeholder="Name.." required />
+          </div>
+          <div class="form-group">
+            <label for="email">Enter Email</label>
+            <input class="form-input" type="email" name="email" id="email" placeholder="Email.." required />
+          </div>
+          <div class="form-group">
+            <label for="message">Enter Message</label>
+            <textarea class="form-input" rows="5" type="text" name="message" id="message" placeholder="Message.."
+              required></textarea>
+          </div>
+          <div class="form-group">
+            <a href="mailto:me@haideralipunjabi.com" target="_blank" rel="noopener noreferrer">Mail me!</a>
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-center">
+          <p>
+            A fork of
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://github.com/dev-caspertheghost">CasperTheGhost's</a> <a target="_blank"
+              rel="noopener noreferrer" href="https://caspertheghost.me">website</a>
+            by <a href="https://haideralipunjabi.com" target="_blank" rel="noopener noreferrer">Haider Ali Punjabi</a>
+          </p>
+        </div>
+        <div class="footer-links">
+          {% for social in social_media %}
+          <a target="_blank" rel="noopener noreferrer" href="{{ social.url }}" class="footer-link link-line">
+            {{ social.name }}</a>
+          {% endfor %}
+
+
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div id="modal-press" class="modal">
+    <div class="modal-content">
+      <div class="modal-title">
+        <h1>In Press</h1>
+        <span onclick="javascript:closeModal('#modal-press')" class="modal-close">{% include 'assets/svgs/solid/times.svg' %}</span>
+      </div>
+      <div class="modal-body">
+        <ol>
+          {% for post in press %}
+          <a href="{{post.link}}" target="_blank" rel="noopener noreferrer">
+            <li>{{post.title}} - {{post.site}}</li>
+          </a>
+          {% endfor %}
+        </ol>
       </div>
     </div>
-    <script defer src="./assets/js/script.js"></script>
-  </body>
+  </div>
+  <script defer src="./assets/js/script.js"></script>
+</body>
+
 </html>

@@ -9,4 +9,5 @@ assets/manifest.json
 *.xcf
 /assets/img/og.svg
 /assets/img/blogs/*
+/assets/img/press/*
 favicon*.json
