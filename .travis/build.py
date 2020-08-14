@@ -52,7 +52,7 @@ def get_press_posts(num):
             post["image_src"] = r["meta"]["image"]
             post["site"] = r["meta"]["site"]["name"]
         if num > i:    
-            filein = f'assets/img/press/{i}.{post["image_src"].split(".")[-1]}'
+            filein = f'assets/img/press/{i}.{post["image_src"].split(".")[-1].split("?")[0]}'
             fileout1 = filein.rsplit(".",1)[0] + ".webp"
             fileout2 = filein.rsplit(".",1)[0] + ".jpg"
             if not NO_DOWNLOAD:
