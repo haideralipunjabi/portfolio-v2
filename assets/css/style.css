@@ -608,7 +608,6 @@ a {
 .press-item .press-site {
   color: var(--primary);
   background-color: var(--bg-dark);
-  ;
   padding: 3px;
 }
 .press-item .press-title a {

@@ -187,7 +187,7 @@
               <picutre>
                 <source srcset="{{ post.data.image[0] }}" type="image/webp">
                 <source srcset="{{ post.data.image[1] }}" type="image/jpeg">
-                <img loading="lazy" src="{{ post.data.image[1] }}" alt="{{ post.data.name }}">
+                <img width="100%" height="100%" loading="lazy" src="{{ post.data.image[1] }}" alt="{{ post.data.name }}">
               </picutre>
             </div>
             <div class="blog-title">
@@ -210,11 +210,11 @@
           {% if post.images|length > 0 %}
           <div class="press-item">
             <div class="press-image">
-              <h3 class="press-site">{{ post.site }}</h3>
+              <h2 class="press-site">{{ post.site }}</h2>
               <picutre>
                 <source srcset="{{ post.images[0] }}" type="image/webp">
                 <source srcset="{{ post.images[1] }}" type="image/jpeg">
-                <img loading="lazy" src="{{ post.images[1] }}" alt="{{ post.title }}">
+                <img width="100%" height="100%" loading="lazy" src="{{ post.images[1] }}" alt="{{ post.title }}">
               </picutre>
             </div>
             <div class="press-title">
