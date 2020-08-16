@@ -254,7 +254,7 @@ a {
 .btn-container .btn:last-child {
   margin-left: 20px;
   color: var(--primary);
-  ;
+  background-color: var(--bg);
   font-weight: bold;
 }
 
