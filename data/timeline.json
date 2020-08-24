@@ -1,6 +1,11 @@
 {
   "timeline": [
     {
+      "title": "Python Package",
+      "time": "August 2020",
+      "description": "<p><a href=\"https://github.com/haideralipunjabi/cli-badges\" title=\"\">cli-badges</a>: Quirky little Python library for generating badges for your CLI apps.</p><p><br></p>"
+    },
+    {
       "title": "Polybar Module",
       "time": "June 2020",
       "description": "<p><a rel=\"noopener noreferrer\" href=\"https://github.com/HackeSta/polybar-speedtest\">polybar-speedtest</a> - speedtest.net module for Polybar<br></p>"
