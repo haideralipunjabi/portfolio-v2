@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "name": "cli-badges",
+      "description": "<p>Quirky little Python library for generating badges for your CLI apps.</p><p><br></p>",
+      "buttons": [
+        {
+          "name": "Pypi",
+          "link": "https://pypi.org/project/cli-badges/",
+          "icon": "/assets/svgs/brands/python.svg"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/haideralipunjabi/cli-badges",
+          "icon": "/assets/svgs/brands/github.svg"
+        }
+      ],
+      "tags": [
+
+      ]
+    },
+    {
       "name": "Tweet2Pic",
       "buttons": [
         {
