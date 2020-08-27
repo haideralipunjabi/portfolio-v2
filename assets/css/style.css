@@ -307,6 +307,11 @@ a {
   text-align: center;
   color: white;
   font-weight: bold;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.skill:hover {
+  transform: scale(1.2);
 }
 
 .skill svg {

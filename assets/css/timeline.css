@@ -7,7 +7,7 @@
   padding-bottom: 2px;
   margin-bottom: 5px;
 }
-.timeline-collapsed .timeline-item:nth-child(n+6){
+.timeline-collapsed .timeline-item:nth-child(n + 6) {
   display: none;
 }
 .timeline-section {
@@ -21,6 +21,11 @@
   justify-content: center;
   color: var(--primary);
   text-align: center;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.timeline-button:hover {
+  transform: scale(1.2);
 }
 
 .timeline-button .more {
@@ -41,8 +46,6 @@
   display: none;
 }
 
-
-
 .timeline {
   margin: 0 auto;
   position: relative;
@@ -55,7 +58,7 @@
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 100px;
@@ -73,7 +76,7 @@
 
 .timeline-item::after {
   z-index: 80;
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -13px;
@@ -97,7 +100,7 @@
 }
 
 .left::before {
-  content: '';
+  content: "";
   height: 0px;
   width: 0px;
   position: absolute;
@@ -110,7 +113,7 @@
 }
 
 .right::before {
-  content: '';
+  content: "";
   height: 0px;
   width: 0px;
   position: absolute;
@@ -127,6 +130,11 @@
   background: var(--bg-dark);
   color: white;
   font-size: 1.1rem;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.timeline-item-body:hover {
+  transform: scale(1.05);
 }
 
 .timeline-item-header {
@@ -180,7 +188,7 @@
 }
 
 @media (hover: hover) {
-  .timeline-link:hover{
+  .timeline-link:hover {
     color: white;
   }
 }
