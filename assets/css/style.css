@@ -58,7 +58,9 @@ textarea:focus {
 a {
   color: var(--primary);
 }
-
+.main, .section {
+  content-visibility: auto;
+}
 .section-title {
   padding-top: 65px;
   margin-top: 10px;
