@@ -23,6 +23,11 @@
       "name": "Tweet2Pic",
       "buttons": [
         {
+          "name": "Website",
+          "link": "https://tweet2pic.js.org",
+          "icon": "/assets/svgs/solid/globe-asia.svg"
+        },
+        {
           "name": "Play Store",
           "link": "https://play.google.com/store/apps/details?id=org.hackesta.tweet2pic",
           "icon": "assets/svgs/brands/google-play.svg"
@@ -31,7 +36,8 @@
       "description": "Tweet2Pic is a small tool, which can be used to share your Twitter Tweets in the form of an image.",
       "tags": [
         "assets/svgs/brands/android.svg",
-        "assets/svgs/brands/java.svg"
+        "assets/svgs/brands/java.svg",
+        "assets/svgs/solid/globe-asia.svg"
       ]
     },
     {
