@@ -1,6 +1,11 @@
 {
   "timeline": [
     {
+      "title": "Website",
+      "time": "December 2020",
+      "description": "<p><a href=\"https://tweet2pic.js.org\" title=\"\">Tweet2Pic</a>: Created Tweet2Pic PWA using <a href=\"https://nextjs.org/\" title=\"\">NextJS</a></p>"
+    },
+    {
       "title": "Python Package",
       "time": "August 2020",
       "description": "<p><a href=\"https://github.com/haideralipunjabi/cli-badges\" title=\"\">cli-badges</a>: Quirky little Python library for generating badges for your CLI apps.</p><p><br></p>"
