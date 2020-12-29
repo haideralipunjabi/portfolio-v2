@@ -1,4 +1,6 @@
-# Portfoliov2
+# Portfolio v2
+
+**This repository has now been archived. New Website is stored in [this repository](https://github.com/haideralipunjabi/haideralipunjabi.com)**
 
 Fork of [Portfoliov2 by CasperTheGhost](https://github.com/Dev-CasperTheGhost/portfolio-v2).  
 Repository containing code for [my portfolio website](https://haideralipunjabi.com).
